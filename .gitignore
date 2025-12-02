@@ -55,8 +55,11 @@ cover/
 *.mo
 *.pot
 
-# Django stuff:
+# Logs
+logs/
 *.log
+
+# Django stuff:
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -143,6 +146,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Sensitive Files
+*.key
 
 # Spyder project settings
 .spyderproject

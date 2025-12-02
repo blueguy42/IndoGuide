@@ -1,0 +1,10 @@
+name: aiconvo
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - streamlit
+    - openai
+    - python-dotenv
