@@ -68,7 +68,7 @@ class DialogueLogger:
         """
         session_start_time = re.sub("[^0-9]", "", session_log.get("session_start_time", "unknown"))
         session_id = session_log["session_id"]
-        filename = f"{session_start_time}_{session_id}.json"
+        filename = f"conversation_{session_start_time}_{session_id}.json"
         filepath = os.path.join(self.log_dir, filename)
         
         with open(filepath, 'w', encoding='utf-8') as f:
