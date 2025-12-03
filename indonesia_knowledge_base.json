@@ -1,122 +1,982 @@
 [
-  { "id": 1, "topic": "Visa & Entry Rules", "title": "Visa on Arrival Overview", "content": "Indonesia offers Visa on Arrival (VoA) for eligible nationalities, valid for 30 days and extendable once for another 30 days." },
-  { "id": 2, "topic": "Visa & Entry Rules", "title": "Electronic Visa on Arrival", "content": "Travelers can apply for an e-VoA online before arriving, allowing faster processing at the airport." },
-  { "id": 3, "topic": "Visa & Entry Rules", "title": "Passport Validity Rule", "content": "Your passport must be valid for at least six months from your date of entry into Indonesia." },
-  { "id": 4, "topic": "Visa & Entry Rules", "title": "Return Ticket Requirement", "content": "Immigration may require proof of onward or return travel when entering the country." },
-  { "id": 5, "topic": "Visa & Entry Rules", "title": "Tourist Stay Extensions", "content": "Tourist visas can typically be extended once at a local immigration office, requiring biometric data." },
-  { "id": 6, "topic": "Visa & Entry Rules", "title": "Overstay Penalties", "content": "Overstaying incurs daily fines and potential detention for long overstays; avoid exceeding your allowed duration." },
-  { "id": 7, "topic": "Visa & Entry Rules", "title": "Visa-Free Entry Rules", "content": "Indonesia suspended many visa-free policies; check current eligibility before travel." },
-  { "id": 8, "topic": "Visa & Entry Rules", "title": "Work Restrictions on Tourist Visas", "content": "Employment or volunteer work is strictly prohibited on tourist visas, with penalties for violations." },
-  { "id": 9, "topic": "Visa & Entry Rules", "title": "Business Visa Basics", "content": "A business visa allows attending meetings but not employment; duration varies by sponsor." },
-  { "id": 10, "topic": "Visa & Entry Rules", "title": "Customs Declaration Process", "content": "Arrivals must complete a customs declaration, available digitally, covering goods, cash, and food items." },
-  { "id": 11, "topic": "Visa & Entry Rules", "title": "Cash Limit Regulations", "content": "Amounts over 100 million IDR (or equivalent) must be declared upon entry." },
-  { "id": 12, "topic": "Visa & Entry Rules", "title": "Restricted Items", "content": "Drugs, weapons, and certain pharmaceuticals require permits and are heavily regulated." },
-  { "id": 13, "topic": "Visa & Entry Rules", "title": "COVID-era Requirements", "content": "Health regulations change frequently; insurance or vaccination proof may be required depending on updates." },
-  { "id": 14, "topic": "Transport Basics", "title": "Ride-Hailing Apps", "content": "Gojek and Grab are the most commonly used ride-hailing services for cars and motorbikes." },
-  { "id": 15, "topic": "Transport Basics", "title": "Motorbike Taxis", "content": "Motorbike taxis, called 'ojek', are fast and economical, ideal for busy city traffic." },
-  { "id": 16, "topic": "Transport Basics", "title": "TransJakarta Bus System", "content": "Jakarta has a dedicated-lane bus system called TransJakarta, offering cheap citywide travel." },
-  { "id": 17, "topic": "Transport Basics", "title": "Jakarta MRT", "content": "The MRT runs north–south through central Jakarta, providing efficient and clean transit." },
-  { "id": 18, "topic": "Transport Basics", "title": "Intercity Trains", "content": "Java Island has reliable trains connecting Jakarta, Bandung, Yogyakarta, and Surabaya." },
-  { "id": 19, "topic": "Transport Basics", "title": "Ferry Travel", "content": "Ferries connect major islands; popular routes include Bali–Nusa Penida and Java–Bali." },
-  { "id": 20, "topic": "Transport Basics", "title": "Driving Restrictions", "content": "Driving requires an international driving permit; road conditions vary widely across regions." },
-  { "id": 21, "topic": "Transport Basics", "title": "Traffic Congestion", "content": "Large cities often experience heavy traffic, especially during rush hours and holidays." },
-  { "id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses", "content": "Intercity buses serve distant provinces, with VIP classes offering recliners and AC." },
-  { "id": 23, "topic": "Transport Basics", "title": "Rail Ticket Booking", "content": "Train tickets can be purchased online through the official KAI app or website." },
-  { "id": 24, "topic": "Transport Basics", "title": "Scooter Rentals", "content": "Renting scooters is popular in tourist areas but requires caution and proper licensing." },
-  { "id": 25, "topic": "Transport Basics", "title": "Taxis", "content": "Blue Bird is a trusted taxi company known for using meters reliably." },
-  { "id": 26, "topic": "Transport Basics", "title": "Airport Transfers", "content": "Airports offer fixed-rate taxis and online booking options for reliable transfers." },
-  { "id": 27, "topic": "Destinations & Attractions", "title": "Bali Overview", "content": "Bali is Indonesia’s most famous island, known for beaches, temples, and cultural experiences." },
-  { "id": 28, "topic": "Destinations & Attractions", "title": "Ubud Cultural Hub", "content": "Ubud offers traditional crafts, rice terraces, and spiritual retreats." },
-  { "id": 29, "topic": "Destinations & Attractions", "title": "Nusa Penida Highlights", "content": "Nusa Penida features dramatic cliffs, Kelingking Beach, and crystal-clear snorkeling spots." },
-  { "id": 30, "topic": "Destinations & Attractions", "title": "Jakarta Old Town", "content": "Kota Tua contains colonial-era buildings, museums, and vibrant street life." },
-  { "id": 31, "topic": "Destinations & Attractions", "title": "Borobudur Temple", "content": "Borobudur in Central Java is the world’s largest Buddhist temple, famed for its sunrise views." },
-  { "id": 32, "topic": "Destinations & Attractions", "title": "Prambanan Temple", "content": "Prambanan is a 9th-century Hindu temple complex known for its tall spires and evening ballet shows." },
-  { "id": 33, "topic": "Destinations & Attractions", "title": "Mount Bromo", "content": "Mount Bromo is an active volcano with stunning sunrise viewpoints in East Java." },
-  { "id": 34, "topic": "Destinations & Attractions", "title": "Komodo National Park", "content": "Komodo National Park is home to Komodo dragons and world-class diving sites." },
-  { "id": 35, "topic": "Destinations & Attractions", "title": "Lake Toba", "content": "Lake Toba in North Sumatra is a volcanic lake featuring Batak culture and scenic landscapes." },
-  { "id": 36, "topic": "Destinations & Attractions", "title": "Raja Ampat", "content": "Raja Ampat offers some of the richest marine biodiversity and pristine diving in the world." },
-  { "id": 37, "topic": "Destinations & Attractions", "title": "Gili Islands", "content": "The Gili Islands are car-free tropical islands popular for diving and relaxed beaches." },
-  { "id": 38, "topic": "Destinations & Attractions", "title": "Yogyakarta City", "content": "Yogyakarta is a cultural center known for arts, history, and access to Borobudur and Prambanan." },
-  { "id": 39, "topic": "Destinations & Attractions", "title": "Bandung Highlands", "content": "Bandung offers cool weather, art scenes, and tea plantations in the surrounding highlands." },
-  { "id": 40, "topic": "Destinations & Attractions", "title": "Tana Toraja", "content": "Tana Toraja is known for unique funeral traditions and dramatic traditional houses." },
-  { "id": 41, "topic": "Destinations & Attractions", "title": "Bunaken Marine Park", "content": "Bunaken in North Sulawesi is renowned for exceptional wall diving." },
-  { "id": 42, "topic": "Destinations & Attractions", "title": "Belitung Island", "content": "Belitung is famous for white granite boulders, calm beaches, and island hopping." },
-  { "id": 43, "topic": "Destinations & Attractions", "title": "Lombok Beaches", "content": "Lombok offers quieter alternatives to Bali with surf spots and scenic coastline." },
-  { "id": 44, "topic": "Destinations & Attractions", "title": "Mount Rinjani", "content": "Mount Rinjani is a challenging trek with crater lake views on Lombok." },
-  { "id": 45, "topic": "Destinations & Attractions", "title": "Seminyak", "content": "Seminyak is a trendy area with upscale dining, boutiques, and sunset bars." },
-  { "id": 46, "topic": "Destinations & Attractions", "title": "Canggu", "content": "Canggu is popular with surfers and digital nomads, offering cafes and beach clubs." },
-  { "id": 47, "topic": "Destinations & Attractions", "title": "Kuta Beach", "content": "Kuta is Bali’s most famous surf and nightlife district, suitable for beginners." },
-  { "id": 48, "topic": "Destinations & Attractions", "title": "Nusa Dua", "content": "Nusa Dua features luxury resorts and calm beaches ideal for families." },
-  { "id": 49, "topic": "Destinations & Attractions", "title": "Sanur", "content": "Sanur is known for a quiet seaside promenade and gentle waters." },
-  { "id": 50, "topic": "Destinations & Attractions", "title": "Uluwatu Temple", "content": "Uluwatu Temple sits on a cliff edge and is famous for Kecak dance performances." },
-  { "id": 51, "topic": "Destinations & Attractions", "title": "Tanah Lot Temple", "content": "Tanah Lot is an iconic sea temple best visited during sunset." },
-  { "id": 52, "topic": "Destinations & Attractions", "title": "Menjangan Island", "content": "Menjangan in West Bali is known for calm, clear waters ideal for snorkeling." },
-  { "id": 53, "topic": "Destinations & Attractions", "title": "Malang", "content": "Malang offers colonial architecture and access to Bromo and Tumpak Sewu waterfall." },
-  { "id": 54, "topic": "Destinations & Attractions", "title": "Tumpak Sewu Waterfall", "content": "Tumpak Sewu is a dramatic multi-tiered waterfall often called the Niagara of Indonesia." },
-  { "id": 55, "topic": "Destinations & Attractions", "title": "Karimunjawa Islands", "content": "Karimunjawa is a remote archipelago with pristine beaches and coral reefs." },
-  { "id": 56, "topic": "Destinations & Attractions", "title": "Aceh's Baiturrahman Mosque", "content": "Aceh’s grand mosque is an architectural landmark with deep historical significance." },
-  { "id": 57, "topic": "Destinations & Attractions", "title": "Medan Food Scene", "content": "Medan is known for rich culinary diversity, including Batak, Malay, and Indian influences." },
-  { "id": 58, "topic": "Destinations & Attractions", "title": "Makassar Fort Rotterdam", "content": "Fort Rotterdam is a Dutch-era fort showcasing regional history." },
-  { "id": 59, "topic": "Destinations & Attractions", "title": "Papua Baliem Valley", "content": "Baliem Valley offers trekking and encounters with highland Papuan cultures." },
-  { "id": 60, "topic": "Destinations & Attractions", "title": "Derawan Islands", "content": "Derawan Islands are known for manta rays, jellyfish lakes, and turquoise waters." },
-  { "id": 61, "topic": "Destinations & Attractions", "title": "Ancol Dreamland", "content": "Ancol in Jakarta is a seaside recreation area with theme parks and beaches." },
-  { "id": 62, "topic": "Destinations & Attractions", "title": "Monas Tower", "content": "Monas is Jakarta’s national monument and offers panoramic city views." },
-  { "id": 63, "topic": "Destinations & Attractions", "title": "Surabaya Old Town", "content": "Surabaya’s historical quarter includes colonial buildings and heritage cafés." },
-  { "id": 64, "topic": "Destinations & Attractions", "title": "Banyuwangi Ijen Crater", "content": "Ijen Crater is famous for blue flames and sulfur mining." },
-  { "id": 65, "topic": "Destinations & Attractions", "title": "Flores Kelimutu Lakes", "content": "Kelimutu features three volcanic lakes that change colors due to mineral reactions." },
-  { "id": 66, "topic": "Destinations & Attractions", "title": "Wakatobi National Park", "content": "Wakatobi is a marine paradise known for coral diversity and sustainable tourism." },
-  { "id": 67, "topic": "Destinations & Attractions", "title": "Bogor Botanical Gardens", "content": "Bogor Botanical Gardens contain thousands of tropical plant species." },
-  { "id": 68, "topic": "Destinations & Attractions", "title": "Garut Hot Springs", "content": "Garut offers natural hot spring resorts in a mountain setting." },
-  { "id": 69, "topic": "Destinations & Attractions", "title": "Belitung Museum", "content": "The Belitung Museum highlights tin-mine history and local culture." },
-  { "id": 70, "topic": "Destinations & Attractions", "title": "Padang Beachfront", "content": "Padang is known for beaches and as a gateway to the Mentawai Islands." },
-  { "id": 71, "topic": "Destinations & Attractions", "title": "Mentawai Surfing", "content": "The Mentawai Islands offer world-class surf breaks." },
-  { "id": 72, "topic": "Destinations & Attractions", "title": "Bromo Tengger National Park", "content": "This national park includes vast volcanic landscapes and the Tengger caldera." },
-  { "id": 73, "topic": "Destinations & Attractions", "title": "Labuan Bajo", "content": "Labuan Bajo is the gateway to Komodo National Park with growing tourism facilities." },
-  { "id": 74, "topic": "Destinations & Attractions", "title": "Jakarta Chinatown (Glodok)", "content": "Glodok is one of the oldest Chinatowns, offering temples and street food." },
-  { "id": 75, "topic": "Destinations & Attractions", "title": "Bali Rice Terraces", "content": "Tegalalang and Jatiluwih terraces display Bali’s traditional subak irrigation." },
-  { "id": 76, "topic": "Destinations & Attractions", "title": "Sumba Traditional Villages", "content": "Sumba offers unique megalithic tombs and grass-roof houses." },
-  { "id": 77, "topic": "Destinations & Attractions", "title": "Banda Islands", "content": "The Banda Islands are historic nutmeg islands with pristine reefs." },
-  { "id": 78, "topic": "Destinations & Attractions", "title": "Jakarta Grand Indonesia Mall", "content": "Grand Indonesia is a major shopping complex with diverse dining." },
-  { "id": 79, "topic": "Destinations & Attractions", "title": "Safari Park Indonesia", "content": "Bogor’s Taman Safari offers drive-through wildlife experiences." },
-  { "id": 80, "topic": "Destinations & Attractions", "title": "Bali Waterfalls", "content": "Sekumpul and Gitgit waterfalls offer scenic trekking and cool pools." },
-  { "id": 81, "topic": "Destinations & Attractions", "title": "Manado Highlands", "content": "The Manado highlands offer cool climates and volcano treks like Mount Lokon." },
-  { "id": 82, "topic": "Safety Tips", "title": "Traffic Awareness", "content": "Urban traffic is chaotic; always check both directions when crossing streets." },
-  { "id": 83, "topic": "Safety Tips", "title": "Motorbike Safety", "content": "Wear helmets and avoid riding in heavy rain due to slippery roads." },
-  { "id": 84, "topic": "Safety Tips", "title": "Food Safety", "content": "Eat at busy stalls and restaurants to ensure food freshness." },
-  { "id": 85, "topic": "Safety Tips", "title": "Drink Water Caution", "content": "Tap water is not potable; always use bottled or filtered water." },
-  { "id": 86, "topic": "Safety Tips", "title": "Pickpocketing Risks", "content": "Be vigilant in crowded areas like markets and bus terminals." },
-  { "id": 87, "topic": "Safety Tips", "title": "ATM Safety", "content": "Use ATMs located in malls or banks to reduce the risk of skimming." },
-  { "id": 88, "topic": "Safety Tips", "title": "Natural Hazards", "content": "Some regions are prone to earthquakes or volcanic activity; follow local advisories." },
-  { "id": 89, "topic": "Safety Tips", "title": "Beach Safety", "content": "Rip currents exist in many beaches; swim only in designated safe areas." },
-  { "id": 90, "topic": "Safety Tips", "title": "Wildlife Safety", "content": "Do not feed monkeys in tourist areas; they may become aggressive." },
-  { "id": 91, "topic": "Safety Tips", "title": "Scam Awareness", "content": "Be cautious about overpriced tours; compare prices before booking." },
-  { "id": 92, "topic": "Safety Tips", "title": "Night Safety", "content": "Stick to well-lit areas and use registered transport at night." },
-  { "id": 93, "topic": "Safety Tips", "title": "Weather Precautions", "content": "Rainy season can cause flooding; plan extra travel time." },
-  { "id": 94, "topic": "Safety Tips", "title": "Health Precautions", "content": "Mosquito protection is recommended to avoid dengue risk." },
-  { "id": 95, "topic": "Culture & Etiquette", "title": "Greetings", "content": "A polite greeting often includes a slight nod or handshake using the right hand." },
-  { "id": 96, "topic": "Culture & Etiquette", "title": "Right-Hand Rule", "content": "Always use your right hand when giving or receiving objects." },
-  { "id": 97, "topic": "Culture & Etiquette", "title": "Modest Clothing", "content": "Dress modestly in rural areas and religious sites." },
-  { "id": 98, "topic": "Culture & Etiquette", "title": "Temple Etiquette", "content": "Remove shoes before entering temples and dress respectfully." },
-  { "id": 99, "topic": "Culture & Etiquette", "title": "Public Affection", "content": "Public displays of affection are generally frowned upon." },
-  { "id": 100, "topic": "Culture & Etiquette", "title": "Pointing Etiquette", "content": "Avoid pointing with your index finger; gesture with your whole hand instead." },
-  { "id": 101, "topic": "Culture & Etiquette", "title": "Hospitality Norms", "content": "Guests are often offered drinks; politely accept or decline." },
-  { "id": 102, "topic": "Culture & Etiquette", "title": "Entering Homes", "content": "Remove your shoes when entering someone’s home." },
-  { "id": 103, "topic": "Culture & Etiquette", "title": "Respect for Elders", "content": "Elders are addressed politely and given deference in conversation." },
-  { "id": 104, "topic": "Culture & Etiquette", "title": "Photography Etiquette", "content": "Ask permission before photographing people, especially in villages." },
-  { "id": 105, "topic": "Culture & Etiquette", "title": "Quiet Voices", "content": "Speaking loudly in public is considered rude." },
-  { "id": 106, "topic": "Culture & Etiquette", "title": "Feet Etiquette", "content": "Avoid pointing your feet at people or religious objects." },
-  { "id": 107, "topic": "Culture & Etiquette", "title": "Gift-Giving", "content": "Gifts are usually given with the right hand and not opened immediately." },
-  { "id": 108, "topic": "Country-Specific Rules", "title": "Drug Laws", "content": "Indonesia enforces strict drug laws with severe penalties." },
-  { "id": 109, "topic": "Country-Specific Rules", "title": "Smoking Areas", "content": "Smoking is restricted in many public areas; look for designated zones." },
-  { "id": 110, "topic": "Country-Specific Rules", "title": "Alcohol Regulations", "content": "Alcohol availability varies; some regions restrict or ban alcohol." },
-  { "id": 111, "topic": "Country-Specific Rules", "title": "Drone Regulations", "content": "Drone use requires respecting no-fly zones, including airports and government buildings." },
-  { "id": 112, "topic": "Country-Specific Rules", "title": "Public Conduct", "content": "Public intoxication or disruptive behavior can lead to fines or arrest." },
-  { "id": 113, "topic": "Country-Specific Rules", "title": "Environmental Rules", "content": "Many areas enforce bans on single-use plastics." },
-  { "id": 114, "topic": "Country-Specific Rules", "title": "Protected Wildlife", "content": "Buying or trading protected animal products is illegal." },
-  { "id": 115, "topic": "Country-Specific Rules", "title": "Cultural Heritage Protection", "content": "Damaging temples or heritage sites can result in heavy penalties." },
-  { "id": 116, "topic": "Country-Specific Rules", "title": "Visa Status Checks", "content": "Tourists must carry ID or digital copies and may be asked to show visa status." },
-  { "id": 117, "topic": "Country-Specific Rules", "title": "Internet Restrictions", "content": "Some regions may experience temporary internet blocks during major events." },
-  { "id": 118, "topic": "Country-Specific Rules", "title": "Currency Regulations", "content": "Payments are legally required in Indonesian Rupiah, even in tourist areas." },
-  { "id": 119, "topic": "Country-Specific Rules", "title": "Photography Restrictions", "content": "Photography is prohibited in some government and military areas." },
-  { "id": 120, "topic": "Country-Specific Rules", "title": "Littering Laws", "content": "Littering fines apply in many cities and tourist destinations." }
+  {
+    "id": 1,
+    "topic": "Visa & Entry Rules",
+    "title": "Passport Validity and Condition",
+    "content": "To enter Indonesia, your passport **must be valid for at least six months** beyond your arrival date. Immigration authorities are very strict about this requirement, and travelers may be denied entry if their passport is near expiry. Additionally, your passport needs at least two blank pages for entry and exit stamps. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+  },
+  {
+    "id": 2,
+    "topic": "Visa & Entry Rules",
+    "title": "Visa on Arrival (VOA) and e-VOA",
+    "content": "Many nationalities are eligible for a **Visa on Arrival (VOA)**, which is valid for 30 days and costs 500,000 Indonesian Rupiah (approx. $35 USD). You can apply for the **Electronic Visa on Arrival (e-VOA)** in advance, which is highly recommended to expedite your airport process. Both the VOA and e-VOA can be extended once for an additional 30 days at an immigration office. ",
+    "source": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Indonesia.html"
+  },
+  {
+    "id": 3,
+    "topic": "Visa & Entry Rules",
+    "title": "Mandatory Arrival Card Submission",
+    "content": "All travelers entering Indonesia are required to complete an **All Indonesia Arrival Card** online before their travel. This mandatory digital declaration covers immigration, customs, and health information, streamlining multiple separate processes. You must submit this card through the official portal within 72 hours (3 days) of your scheduled arrival. ",
+    "source": "https://www.smartraveller.gov.au/destinations/asia/indonesia"
+  },
+  {
+    "id": 4,
+    "topic": "Visa & Entry Rules",
+    "title": "Proof of Onward Travel Requirement",
+    "content": "Indonesian immigration authorities typically require proof of a **return or onward flight ticket** when you enter the country. This ensures that you will depart the country before your visa or allotted stay expires. Having this proof ready at immigration will facilitate a smoother entry process and prevent potential delays. ",
+    "source": "https://www.atlys.com/blog/indonesia-entry-requirements"
+  },
+  {
+    "id": 5,
+    "topic": "Visa & Entry Rules",
+    "title": "Bali Tourist Levy",
+    "content": "Foreign tourists visiting Bali are subject to a **mandatory tourist levy of IDR 150,000** per person, separate from any visa fees. This one-time fee can be paid cashless online before arrival through the Love Bali system or at designated counters at the airport and seaport. Pre-payment is encouraged for the smoothest arrival experience. ",
+    "source": "https://www.atlys.com/blog/indonesia-entry-requirements"
+  },
+  {
+    "id": 6,
+    "topic": "Visa & Entry Rules",
+    "title": "Consequences of Visa Overstay",
+    "content": "Overstaying your visa in Indonesia is a serious offense that results in a heavy fine of **IDR 1,000,000 (about $64 USD) per day**. Beyond the fine, you risk detention, deportation, and a potential ban on future travel to Indonesia. Always monitor your visa expiration date and apply for extensions well in advance at the nearest immigration office. ",
+    "source": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Indonesia.html"
+  },
+  {
+    "id": 7,
+    "topic": "Visa & Entry Rules",
+    "title": "Damaged Passport Warning",
+    "content": "Indonesian authorities maintain **strict standards for passport condition** and have refused entry to travelers with damaged documents. Even normal wear like water damage, minor tears, or small rips to the pages can be considered damaged enough to warrant denial of entry. Ensure your passport is in excellent condition before departing for Indonesia. ",
+    "source": "https://www.smartraveller.gov.au/destinations/asia/indonesia"
+  },
+  {
+    "id": 8,
+    "topic": "Visa & Entry Rules",
+    "title": "Applying for Long-Term Visas",
+    "content": "For stays longer than 30 days or for purposes not covered by the VOA (like specific business activities), you must apply for a visa in advance. Applications for multiple-entry or 60-day visas must be submitted through the official Indonesian immigration website. It is crucial to confirm your visa approval before arrival to avoid any complications. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+  },
+  {
+    "id": 9,
+    "topic": "Visa & Entry Rules",
+    "title": "Using the Correct Visa for your Purpose",
+    "content": "It is essential to ensure that the visa you hold aligns with the **purpose of your visit**, such as tourism, business, or official duties. Using a VOA for an unpermitted business purpose may lead to issues with immigration authorities. Always check the Indonesian Immigration website to confirm the correct visa category before your trip. ",
+    "source": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Indonesia.html"
+  },
+  {
+    "id": 10,
+    "topic": "Visa & Entry Rules",
+    "title": "Beware of Visa Scams",
+    "content": "Be cautious of fake visa agents who may take your money but fail to provide a correct or valid visa. Always use the **official Indonesian immigration website** to get or extend your visa to avoid falling victim to scams, which are reportedly increasing. Using unofficial agents could result in overstay fines or deportation, even if you paid for the correct documents. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/entry-requirements"
+  },
+  {
+    "id": 11,
+    "topic": "Visa & Entry Rules",
+    "title": "ID and Passport Copy Requirement",
+    "content": "You should **always carry identification** (or a copy) such as your passport or resident stay permit while traveling in Indonesia. Officials, particularly in tourist areas like Bali, often conduct ID checks. Carrying a copy is safer than the original, but the original should be readily accessible if requested by authorities. ",
+    "source": "https://www.smartraveller.gov.au/destinations/asia/indonesia"
+  },
+  {
+    "id": 12,
+    "topic": "Visa & Entry Rules",
+    "title": "Exiting Indonesia Requirements",
+    "content": "You must exit Indonesia using the **same passport** that you used to enter the country. If your passport is replaced during your stay (for example, if it was lost or stolen), you must obtain a 'special pass' or **exit permit** from Immigration for your new passport before departure. Failure to do so will complicate your exit process. ",
+    "source": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Indonesia.html"
+  },
+  {
+    "id": 13,
+    "topic": "Visa & Entry Rules",
+    "title": "Visa Application Timeframes",
+    "content": "If you are applying for an e-VOA, you should submit your application **at least 48 hours** before your travel date to Indonesia. For other types of visas, it is recommended to apply at least a week before you leave. This gives the authorities enough time to process your application and issue the necessary approvals. ",
+    "source": "https://www.tui.co.uk/destinations/asia/indonesia/holidays-indonesia/travel-advice"
+  },
+  {
+    "id": 14,
+    "topic": "Visa & Entry Rules",
+    "title": "Carrying an International Driving Permit (IDP)",
+    "content": "If you plan to rent and drive a scooter or car in Indonesia, you **must possess an International Driving Permit (IDP)** alongside your home country's license. Driving without an IDP is a traffic violation, which can lead to complications with local police and may even invalidate your health insurance in the event of an accident. This is especially important in popular areas like Bali. ",
+    "source": "https://www.atlys.com/blog/indonesia-entry-requirements"
+  },
+  {
+    "id": 15,
+    "topic": "Transport Basics",
+    "title": "Inter-Island Travel: Flights vs. Ferries",
+    "content": "Given Indonesia's vast geography of over 17,000 islands, **domestic flights** are the most convenient option for long-distance inter-island travel. Reputable airlines include state-operated Garuda Indonesia, AirAsia, and Citilink. For shorter crossings, such as Bali to Lombok or Java to Sumatra, **public ferries and speedboats** offer a more affordable, though sometimes less predictable, alternative. ",
+    "source": "https://mybestplacestovisit.com/asia/indonesia/get-around-indonesia/"
+  },
+  {
+    "id": 16,
+    "topic": "Transport Basics",
+    "title": "Train Travel in Java",
+    "content": "On the island of **Java**, trains are often considered more comfortable and reliable than long-distance buses. Major routes connect key cities like Jakarta, Bandung, and Yogyakarta, offering scenic views of rice fields and mountains. Trains typically offer three classes: Economy, Business, and Executive, with the latter providing the highest comfort level. ",
+    "source": "https://www.shantitravel.com/en/guide-travel-indonesia/Transportation-in-Indonesia"
+  },
+  {
+    "id": 17,
+    "topic": "Transport Basics",
+    "title": "Ride-Hailing Apps and Taxis",
+    "content": "In major Indonesian cities like Jakarta, Surabaya, and Bali, **ride-hailing apps** such as Grab and Gojek are the most convenient and often safest way to travel. These apps simplify urban transport and are generally cheaper than negotiating with traditional taxis. For traditional taxis, reputable companies like **Blue Bird** are recommended, and you should always ensure the driver uses the meter. ",
+    "source": "https://mybestplacestovisit.com/asia/indonesia/get-around-indonesia/"
+  },
+  {
+    "id": 18,
+    "topic": "Transport Basics",
+    "title": "Angkots (Minibuses) for Short Distances",
+    "content": "**Angkots**, also known as bemos, oplets, or microlets, are color-coded minibuses that run fixed circuits in cities and rural areas. They are a local staple for short distances and offer a budget-friendly, authentic, though often crowded, travel experience. Fares are usually paid directly to the driver, and they leave when full rather than on a fixed schedule. ",
+    "source": "https://www.roughguides.com/indonesia/getting-around/"
+  },
+  {
+    "id": 19,
+    "topic": "Transport Basics",
+    "title": "Motorbike and Scooter Rental",
+    "content": "Renting a **motorcycle or scooter** is a popular and flexible way to explore tourist areas like Bali and Lombok. Rental rates start around IDR 50,000 per day, but you must wear a helmet and possess a valid **International Driving Permit (IDP)**. Due to chaotic traffic, caution is essential, and travelers should be aware of high accident rates. ",
+    "source": "https://mybestplacestovisit.com/asia/indonesia/get-around-indonesia/"
+  },
+  {
+    "id": 20,
+    "topic": "Transport Basics",
+    "title": "Hiring a Private Driver",
+    "content": "For exploring a specific island or covering long distances, especially in Java, **renting a car with a driver** is often the best option for tourists. This avoids the stress and complexity of navigating Indonesia's chaotic driving conditions, poor traffic discipline, and unfamiliar roads. Hiring a driver is especially recommended for first-time visitors or during long travel days. ",
+    "source": "https://mybestplacestovisit.com/asia/indonesia/get-around-indonesia/"
+  },
+  {
+    "id": 21,
+    "topic": "Transport Basics",
+    "title": "Traditional Transport: Becak and Ojek",
+    "content": "Traditional modes of transport include the **becak** (pedal-powered or motorized cycle-rickshaw) and **ojek** (single-passenger motorcycle taxi). These are common in smaller cities and neighborhoods, offering a colorful glimpse into daily life. Always negotiate the fare for becaks and ojeks *before* starting your journey to avoid misunderstandings or inflated prices. ",
+    "source": "https://www.shantitravel.com/en/guide-travel-indonesia/Transportation-in-Indonesia"
+  },
+  {
+    "id": 22,
+    "topic": "Transport Basics",
+    "title": "Long-Distance Buses and Shuttle Services",
+    "content": "Long-distance buses are a **budget-friendly option** for inter-city travel, connecting major cities and remote destinations. While they can be crowded and slow, options range from economy to air-conditioned VIP services. Alternatively, **tourist shuttle buses** like Perama offer a more comfortable, quicker, and air-conditioned way to travel between tourist hotspots like Bali and Lombok. ",
+    "source": "https://www.roughguides.com/indonesia/getting-around/"
+  },
+  {
+    "id": 23,
+    "topic": "Transport Basics",
+    "title": "Booking Train and Ferry Tickets",
+    "content": "Train tickets for Java can be conveniently booked online via the official railway website, through agents like Tiket, or at convenience stores with self-service machines. For ferries, tickets are available at the local Pelni office a few days before departure, but travelers should be aware that schedules can change and delays are common. Booking in advance is recommended for busy routes and high season. ",
+    "source": "https://www.roughguides.com/indonesia/getting-around/"
+  },
+  {
+    "id": 24,
+    "topic": "Transport Basics",
+    "title": "Safety on Rental Vehicles",
+    "content": "When renting a vehicle, always ensure the company is **legal and registered** and that the vehicle is roadworthy and properly registered. If renting a scooter, demand a helmet in good condition and ensure you are covered by your travel insurance. Authorities are increasingly strict on license checks and helmet use, with heavy fines for non-compliance. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 25,
+    "topic": "Transport Basics",
+    "title": "Driving Caution at Night",
+    "content": "Driving yourself outside of major cities, particularly after dark, is **highly discouraged** due to poorly lit roads and inconsistent use of lights by local drivers. Hiring a professional driver is a safer alternative for night travel. If you are involved in a traffic accident, it is best to remain in your vehicle and wait for a police officer to arrive. ",
+    "source": "https://travel.gc.ca/destinations/indonesia"
+  },
+  {
+    "id": 26,
+    "topic": "Transport Basics",
+    "title": "Allowing Extra Time for Travel",
+    "content": "When planning your trip, it is crucial to stay flexible and **allow extra time between journeys** as transportation in Indonesia can be unpredictable. Delays are common with ferries and local buses, and traffic can be chaotic, especially in urban areas like Bali and Jakarta. Building a buffer into your itinerary will help avoid unnecessary stress and missed connections. ",
+    "source": "https://www.roughguides.com/indonesia/getting-around/"
+  },
+  {
+    "id": 27,
+    "topic": "Transport Basics",
+    "title": "Travel Classes on Indonesian Trains",
+    "content": "Indonesian trains offer three main classes of service: **Economy**, **Business**, and **Executive**. Economy is the most basic and budget-friendly, ideal for short trips. Business offers more legroom and comfort, while Executive class provides reclining seats, air conditioning, and a high level of comfort for long or overnight journeys. ",
+    "source": "https://mybestplacestovisit.com/asia/indonesia/get-around-indonesia/"
+  },
+  {
+    "id": 28,
+    "topic": "Destinations & Attractions",
+    "title": "Borobudur Temple, Java",
+    "content": "**Borobudur** is the world's largest Buddhist temple and a UNESCO World Heritage site, dating back to the 9th century. Located near Yogyakarta in Central Java, this massive structure features three tiers adorned with intricate carvings, and its central dome is dotted with sculpted Buddha figures and stupas. The temple is especially stunning at sunrise, offering spectacular views over the surrounding mountainous landscape. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 29,
+    "topic": "Destinations & Attractions",
+    "title": "Mount Bromo, Java",
+    "content": "**Mount Bromo** is an active volcano and one of Java's most iconic natural landmarks, located within the Bromo Tengger Semeru National Park. Travelers flock here to witness the **ethereal sunrise** from the Penanjakan viewpoint, which overlooks the volcano, the vast Sea of Sand, and surrounding peaks. Visitors can then hike across the volcanic ash to reach Bromo's crater rim for a closer look. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 30,
+    "topic": "Destinations & Attractions",
+    "title": "Komodo National Park, Flores",
+    "content": "**Komodo National Park** is a UNESCO World Heritage site comprising the islands of Komodo, Rinca, and Padar, famous as the only natural habitat of the **Komodo dragon**. Beyond the legendary reptiles, the park boasts rich marine biodiversity with vibrant coral reefs, making it a prime spot for diving and snorkeling. A unique highlight is the beautiful **Pink Beach**, one of only a few in the world. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 31,
+    "topic": "Destinations & Attractions",
+    "title": "Ubud, Bali: Cultural and Spiritual Heart",
+    "content": "**Ubud**, located in the highlands of Bali, is considered the island's cultural and spiritual heart. It is famous for its lush **Tegallalang Rice Terraces**, peaceful Hindu temples, and numerous yoga and wellness retreats. Popular attractions include the **Sacred Monkey Forest Sanctuary**, where you can see Balinese long-tailed monkeys in their natural habitat, and the Neka Art Museum. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 32,
+    "topic": "Destinations & Attractions",
+    "title": "Raja Ampat, West Papua: Underwater Paradise",
+    "content": "**Raja Ampat** is an archipelago in West Papua renowned globally as one of the most biodiverse marine environments on Earth. It is a spectacular destination for divers and snorkelers, featuring vibrant coral reefs, colorful fish, and majestic manta rays. The Piaynemo viewpoint is particularly famous for its mesmerizing cluster of small, cone-shaped limestone islands. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 33,
+    "topic": "Destinations & Attractions",
+    "title": "Prambanan Temple, Java",
+    "content": "**Prambanan Temple** is the largest Hindu temple complex in Indonesia and a UNESCO World Heritage site, also located near Yogyakarta. Built in the 9th century, its sharp, jagged temples feature three main inner shrines dedicated to the Hindu trinity: Brahma, Vishnu, and Shiva. The complex is celebrated for arguably the finest sculptural art in the country, showcasing elaborate carvings and spectacular spires. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 34,
+    "topic": "Destinations & Attractions",
+    "title": "Lake Toba and Samosir Island, Sumatra",
+    "content": "**Lake Toba** in North Sumatra is the world's largest volcanic lake, situated within a massive caldera, offering a serene destination with stunning scenery. **Samosir Island**, located in the middle of the lake, is home to the indigenous Batak people and is a fascinating place to explore traditional villages and unique Batak architecture. The area is known for its peaceful atmosphere and cultural heritage. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 35,
+    "topic": "Destinations & Attractions",
+    "title": "The Gili Islands, Lombok",
+    "content": "The **Gili Islands**—Trawangan, Air, and Meno—are three small islands off the coast of Lombok famous for their laid-back vibe, crystal-clear waters, and sandy beaches. There are **no cars or motorbikes**; transport is via bicycle or horse-drawn carriage (*cidomo*). Gili Trawangan is known for its nightlife, Gili Air for its balance of fun and relaxation, and Gili Meno for its tranquil, romantic atmosphere. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 36,
+    "topic": "Destinations & Attractions",
+    "title": "Tanah Lot Temple, Bali",
+    "content": "**Tanah Lot Temple** is an iconic sea temple in Bali, perched dramatically on a rock formation just offshore. Dedicated to the sea gods, it is one of the island's most revered Hindu temples and is especially famous for its **spectacular sunset views**. The temple is only accessible during low tide, adding to its mysterious and enchanting appeal. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 37,
+    "topic": "Destinations & Attractions",
+    "title": "Mount Rinjani, Lombok: Trekking Adventure",
+    "content": "**Mount Rinjani**, located on the island of Lombok, is Indonesia's second-highest volcano and a popular, challenging trekking destination. The multi-day hike rewards climbers with breathtaking views over the island and the stunning **crater lake, Segara Anak**. Climbers must obtain a permit and should only attempt the trek with a registered guide and proper preparation. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 38,
+    "topic": "Destinations & Attractions",
+    "title": "Nusa Penida, Bali's Neighboring Island",
+    "content": "**Nusa Penida** is a rugged island located a short boat ride from Bali, celebrated for its dramatic cliffs, pristine beaches, and rich marine life. The island is known for iconic spots like **Kelingking Beach** (T-Rex Cliff) and for excellent snorkeling and diving with Manta Rays. Getting around requires hiring a scooter or private driver, as the roads can be challenging. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 39,
+    "topic": "Destinations & Attractions",
+    "title": "Ulun Danu Beratan Temple, Bali",
+    "content": "**Ulun Danu Beratan Temple** is one of Bali's most photographed landmarks, situated on the western shore of Lake Beratan in Bedugul. This significant Hindu temple complex appears to **float on the lake's surface**, especially when the water level is high and the surrounding mountains are misty. It was built to worship the lake goddess, Dewi Danu, and the Hindu trinity. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 40,
+    "topic": "Destinations & Attractions",
+    "title": "Uluwatu Temple, Bali: Cliffside Kecak Dance",
+    "content": "**Uluwatu Temple** is an important sea temple magnificently perched atop a 70-meter cliff on Bali's southwestern tip. It is one of the six key spiritual pillars of the island and offers **spectacular sunset views** overlooking the crashing waves. After sunset, the temple courtyard hosts the famous **Kecak Fire Dance**, a traditional Balinese performance. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 41,
+    "topic": "Destinations & Attractions",
+    "title": "Kelimutu National Park, Flores: Multi-Colored Lakes",
+    "content": "**Kelimutu National Park**, located on the island of Flores, is famous for its three distinct summit crater lakes that periodically change color. The lakes—Tiwu Ata Mbupu (Lake of Old People), Tiwu Nuwa Muri Koo Fai (Lake of Young Men and Maidens), and Tiwu Ata Polo (Bewitched Lake)—can shift from blue, green, and red to black. This natural phenomenon is tied to the minerals reacting with volcanic gas. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 42,
+    "topic": "Destinations & Attractions",
+    "title": "Tanjung Puting National Park, Borneo: Orangutans",
+    "content": "**Tanjung Puting National Park** in Central Kalimantan (Borneo) is a major center for conservation and tourism, known for its dense tropical rainforest and swampy terrain. The park is one of the few places in the world where you can see **wild and semi-wild Orangutans** in their natural habitat. Visitors typically explore the park by taking a multi-day trip on a traditional river boat, called a *klotok*. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 43,
+    "topic": "Destinations & Attractions",
+    "title": "Dieng Plateau, Java: Volcanic Landscape",
+    "content": "The **Dieng Plateau** is a vast volcanic complex in Central Java, known for its unique high-altitude landscapes and historical Hindu temples. Situated at around 2,000 meters above sea level, it features bubbling mud pools, hot springs, and ancient temples, some of the oldest in Indonesia. The cool climate makes it a refreshing alternative to the lowlands. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 44,
+    "topic": "Destinations & Attractions",
+    "title": "Luwak Coffee and Agrotourism in Bali",
+    "content": "Bali's agricultural areas, particularly near Ubud, offer **agrotourism experiences** where visitors can learn about traditional farming and Indonesian spices. A major feature is the production of **Luwak Coffee** (*Kopi Luwak*), one of the world's most expensive coffees, which involves civets eating and excreting the coffee beans. Many plantations offer tastings of various teas and coffees, often with beautiful jungle views. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 45,
+    "topic": "Destinations & Attractions",
+    "title": "Kuta Beach, Bali: Surfing and Nightlife",
+    "content": "**Kuta Beach** is one of Bali's most famous and busiest coastal spots, known for its long stretch of golden sand and lively atmosphere. The beach is a popular destination for **beginner surfers** due to its gentle, rolling waves. As the sun sets, the Kuta area transforms into a hub for dining, shopping, and vibrant nightlife, attracting a younger crowd. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 46,
+    "topic": "Destinations & Attractions",
+    "title": "Tirta Gangga Water Palace, Bali",
+    "content": "**Tirta Gangga** is a beautiful former royal water palace in eastern Bali, featuring a unique blend of Balinese and Chinese architecture. The complex is famous for its elaborately carved stone statues, refreshing swimming pools fed by natural springs, and impressive tiered fountains. Visitors enjoy walking on the stepping stones over the fish ponds and feeding the large ornamental carp. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 47,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Sari Water Castle, Yogyakarta",
+    "content": "**Taman Sari** is a former royal garden of the Sultanate of Yogyakarta, known as the 'Water Castle' or 'Pleasure Park.' The complex, built in the 18th century, consists of bathing pools, artificial lakes, and hidden underground tunnels and passages. It served as a retreat and a place for ritual bathing for the Sultan and his harem. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 48,
+    "topic": "Destinations & Attractions",
+    "title": "Sipiso-Piso Waterfall, Sumatra",
+    "content": "**Sipiso-Piso Waterfall** in North Sumatra is one of Indonesia's tallest waterfalls, plunging 120 meters into a valley near Lake Toba. Formed by a small underground river, the sharp cascade offers a dramatic vista among the lush green Karo Plateau. A viewpoint provides stunning panoramic views, though adventurous visitors can also take a long descent to the foot of the falls. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 49,
+    "topic": "Destinations & Attractions",
+    "title": "Bunaken National Park, Sulawesi: Diving",
+    "content": "**Bunaken National Park**, located in North Sulawesi, is a premier marine protected area and a world-class diving destination. It is famous for its sheer, deep walls covered in hard and soft corals, providing a spectacular home for immense marine biodiversity. The area is easily accessible from Manado and is perfect for both experienced divers and snorkeling enthusiasts. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 50,
+    "topic": "Destinations & Attractions",
+    "title": "Ijen Crater, Java: Blue Fire",
+    "content": "**Ijen Crater**, on the island of Java, is famous for its unique natural phenomenon: the **electric blue flames** that emerge from the volcano at night. This color is the result of burning sulfuric gases. Visitors can also see the large, turquoise-blue acidic crater lake, which is the site of a traditional sulfur mining operation. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 51,
+    "topic": "Destinations & Attractions",
+    "title": "Jatiluwih Rice Terraces, Bali: UNESCO Site",
+    "content": "The **Jatiluwih Rice Terraces** in central Bali are a UNESCO World Heritage site and a breathtaking example of the island’s traditional *Subak* irrigation system. These expansive, emerald-green fields cascade down the hillsides, offering stunning panoramic views. It is a more peaceful and authentic alternative to the Tegallalang terraces, emphasizing agricultural heritage. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 52,
+    "topic": "Destinations & Attractions",
+    "title": "Goa Gajah (Elephant Cave), Bali",
+    "content": "**Goa Gajah**, or 'Elephant Cave,' is an archaeological site near Ubud that serves as an important historical and spiritual sanctuary. The main attraction is the cave entrance, which is carved to resemble a menacing mouth, likely representing an earth-dwelling creature. Inside, visitors can find Hindu and Buddhist relics, and the surrounding complex includes ancient bathing pools. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 53,
+    "topic": "Destinations & Attractions",
+    "title": "Besakih Temple, Bali: Mother Temple",
+    "content": "**Pura Besakih** is the 'Mother Temple' of Bali and the largest and holiest temple complex on the island. Located on the slopes of Mount Agung, the sacred volcano, it consists of numerous separate temples that all center on a single major sanctuary. The complex is an important site for Hindu pilgrims and offers a magnificent, spiritual experience. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 54,
+    "topic": "Destinations & Attractions",
+    "title": "Batu Secret Zoo, Malang, Java",
+    "content": "The **Batu Secret Zoo** near Malang in East Java is one of Indonesia's most modern and well-regarded zoological parks. It is known for its extensive and diverse collection of animals from around the world, housed in well-maintained, engaging exhibits. The zoo is part of the Jatim Park complex, making it a popular family destination. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 55,
+    "topic": "Destinations & Attractions",
+    "title": "Seminyak, Bali: Upscale Shopping and Dining",
+    "content": "**Seminyak** is an upscale area north of Kuta, famous for its luxurious resorts, trendy boutiques, and world-class fine dining restaurants. This area caters to a more sophisticated crowd, offering stylish beach clubs and spa experiences. It is an excellent destination for high-end shopping and enjoying contemporary Indonesian and international cuisine. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 56,
+    "topic": "Destinations & Attractions",
+    "title": "Padar Island, Komodo National Park: Viewpoint",
+    "content": "**Padar Island** is one of the three main islands in Komodo National Park and is renowned for its spectacular scenic viewpoint. A short but steep hike leads to a summit offering a breathtaking panorama of three distinct crescent-shaped bays, each with a different colored sand: white, black, and pink. It is one of the most iconic natural sights in Indonesia. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 57,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Mini Indonesia Indah, Jakarta",
+    "content": "**Taman Mini Indonesia Indah** (Beautiful Indonesia Miniature Park) is a sprawling cultural park located in East Jakarta. It presents a condensed version of Indonesian culture, showcasing 26 traditional houses (*rumah adat*) representing the provinces of the country. The park also includes museums, a cable car, and various botanical gardens. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 58,
+    "topic": "Destinations & Attractions",
+    "title": "Ujung Kulon National Park, Java: Javan Rhino",
+    "content": "**Ujung Kulon National Park**, located on the western tip of Java, is a remote and pristine UNESCO World Heritage site. It is significant as the last natural habitat of the critically endangered **Javan Rhinoceros**. The park offers diverse landscapes, including rainforest, beaches, and coral reefs, making it an ideal spot for eco-tourism and wildlife enthusiasts. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 59,
+    "topic": "Destinations & Attractions",
+    "title": "Wakatobi National Park, Sulawesi: Marine Biodiversity",
+    "content": "**Wakatobi National Park** in Southeast Sulawesi is a remote marine park that boasts one of the highest numbers of fish species and the largest fringing coral reef in the world. Its name is an acronym for the four main islands: Wangi-Wangi, Kaledupa, Tomia, and Binongko. It is a premier destination for serious divers and underwater photographers. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 60,
+    "topic": "Destinations & Attractions",
+    "title": "Mentawai Islands, Sumatra: Surfing",
+    "content": "The **Mentawai Islands** off the coast of West Sumatra are globally famous among the surfing community for having some of the most consistent and highest-quality waves in the world. Access to the best breaks often involves booking a multi-day liveaboard boat trip. The islands also offer a glimpse into the unique culture of the indigenous Mentawai people. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 61,
+    "topic": "Destinations & Attractions",
+    "title": "Samosir Island, Lake Toba: Batak Culture",
+    "content": "Within Lake Toba, **Samosir Island** is a cultural hub where visitors can explore the rich heritage of the Batak people, an ethnic group known for their distinctive high-peaked roof architecture. Key attractions include traditional villages, stone chairs used for ancient trials, and the Tomok village museum. The island offers a tranquil escape from the bustling mainland. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 62,
+    "topic": "Destinations & Attractions",
+    "title": "White Crater (Kawah Putih), Bandung, Java",
+    "content": "**Kawah Putih** (White Crater) is a stunning volcanic crater lake near Bandung in West Java. The water in the lake is highly acidic and changes color from a vibrant blue-green to white, depending on the sulfur concentration and temperature. The surrounding landscape, often covered in mist, creates a dramatic, otherworldly atmosphere that is popular for photography. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 63,
+    "topic": "Destinations & Attractions",
+    "title": "Tirtagangga, Bali: Royal Water Garden",
+    "content": "**Tirtagangga**, which translates to 'Water of the Ganges,' is the former royal palace of Karangasem in East Bali, famous for its tiered fountains, ponds, and stone carvings. This serene water garden is an excellent spot for quiet reflection and provides natural spring-fed public swimming pools. It is often less crowded than some of the South Bali attractions. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 64,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Impian Jaya Ancol, Jakarta: Amusement Park",
+    "content": "**Taman Impian Jaya Ancol** is a vast resort complex located on the Jakarta waterfront, providing a major recreational destination for locals and tourists. It includes various attractions such as Fantasy World (Dufan) theme park, a waterpark, an oceanarium (Seaworld Ancol), and a beach. It's a great spot for families and those looking for varied entertainment. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 65,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Safari Bali: Wildlife Park",
+    "content": "The **Amazing Taman Safari Bali** is a major wildlife park that allows visitors to get up close to over 100 species of animals from three continents. Unlike traditional zoos, the park features animals roaming freely in large, realistic habitats, which visitors view from specialized safari buses. It also hosts cultural shows, including the Bali Agung show. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 66,
+    "topic": "Destinations & Attractions",
+    "title": "Borobudur: Sunrise Experience",
+    "content": "Many visitors recommend experiencing Borobudur at **sunrise** to see the temple complex bathed in a golden glow against the morning mist. To do this, you generally need to purchase a separate early-morning ticket, which grants access before the main temple hours. Watching the sunrise from the top tiers of the stupas is considered an unforgettable spiritual experience. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 67,
+    "topic": "Destinations & Attractions",
+    "title": "Sacred Monkey Forest Sanctuary, Ubud",
+    "content": "The **Sacred Monkey Forest Sanctuary** in Ubud is a dense, protected forest and a key spiritual site for the local community. It is home to hundreds of Balinese long-tailed monkeys, which are considered sacred and coexist with several important Hindu temples. Visitors must be cautious, as the monkeys are wild and may try to steal loose items. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 68,
+    "topic": "Destinations & Attractions",
+    "title": "Tegallalang Rice Terraces, Ubud: Photo Spot",
+    "content": "The **Tegallalang Rice Terraces** are one of the most famous sights in the Ubud area, characterized by their beautifully sculpted, cascading greenery. This is a prime location for photography and experiencing the island's traditional rice farming. Tourists can walk through the terraces, often stopping for a local coffee or to try the popular jungle swings. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 69,
+    "topic": "Destinations & Attractions",
+    "title": "Mount Batur, Bali: Sunrise Trekking",
+    "content": "**Mount Batur** is an active volcano in northeastern Bali, highly popular for its **sunrise trekking** experience. The moderately challenging climb begins in the early morning hours, culminating in a spectacular view of the sun rising over the caldera and Lake Batur. Most treks include a local guide and a simple breakfast cooked using the volcano's steam. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 70,
+    "topic": "Destinations & Attractions",
+    "title": "Pink Beach (Pantai Merah), Komodo",
+    "content": "**Pink Beach** (Pantai Merah) is located on Komodo Island and is one of the world's seven known beaches with pink sand. The color comes from microscopic organisms called *Foraminifera*, which produce a red pigment on the coral reefs. When pieces of the red coral mix with the white sand, it creates the soft pink hue, offering a stunning backdrop for snorkeling. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 71,
+    "topic": "Destinations & Attractions",
+    "title": "Nusa Dua, Bali: Luxury Resorts",
+    "content": "**Nusa Dua** is an exclusive, gated resort area in southern Bali known for its manicured landscapes, white-sand beaches, and concentration of five-star international luxury hotels. The area is much quieter and more secluded than Kuta or Seminyak, focusing on resort amenities, water sports, and high-end spas. It's often favored by families and honeymooners seeking tranquility. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 72,
+    "topic": "Destinations & Attractions",
+    "title": "Ubud Art Museums: Neka and Agung Rai",
+    "content": "Ubud is a center for Balinese arts, housing several significant museums, including the **Neka Art Museum** and the **Agung Rai Museum of Art (ARMA)**. These institutions offer insight into the evolution of Balinese painting, traditional carving, and contemporary Indonesian art. Visiting the museums is an excellent way to appreciate the deep artistic heritage of the island. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 73,
+    "topic": "Destinations & Attractions",
+    "title": "Gili Trawangan: Nightlife and Diving",
+    "content": "**Gili Trawangan** (Gili T) is the largest and most popular of the three Gili Islands, known for its vibrant atmosphere and late-night party scene. Despite the energy, it's also a fantastic spot for diving, offering easy access to turtle spots and other excellent reef locations. The island maintains a no-motorized-vehicle rule, adding to its relaxed pace. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 74,
+    "topic": "Destinations & Attractions",
+    "title": "Gili Air: Tranquil Balance",
+    "content": "**Gili Air** offers a perfect balance between the bustling energy of Gili Trawangan and the quiet solitude of Gili Meno. It's a great island for relaxation, yoga, and enjoying beachfront cafes. It has better accessibility to snorkeling right off the beach and a friendly, more intimate village feel than its larger counterpart. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 75,
+    "topic": "Destinations & Attractions",
+    "title": "Gili Meno: Honeymoon and Quiet Retreat",
+    "content": "**Gili Meno** is the smallest and quietest of the Gili Islands, often favored by honeymooners and those seeking a truly tranquil escape. It features a saltwater lake, beautiful secluded beaches, and the famous underwater statues, which are a popular spot for snorkeling and diving. It has the fewest tourist amenities and the most peaceful atmosphere. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 76,
+    "topic": "Destinations & Attractions",
+    "title": "Flores Island: Culture and Nature",
+    "content": "**Flores Island** is an increasingly popular destination, offering a mix of natural beauty and unique culture. Beyond the famous Kelimutu lakes and Komodo National Park, the island is known for its traditional villages like Wae Rebo and Bena, offering a glimpse into the local Ngada culture. The island's landscapes range from pristine beaches to rugged mountains. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 77,
+    "topic": "Destinations & Attractions",
+    "title": "Weh Island (Pulau Weh), Sumatra: Diving and Snorkeling",
+    "content": "**Weh Island** (Pulau Weh), located at the northernmost tip of Sumatra, is renowned for its excellent diving and snorkeling opportunities. The island features crystal-clear waters, vibrant coral reefs, and diverse marine life, including large pelagic species. It offers a more off-the-beaten-path experience compared to the dive sites of Bali or the Gili Islands. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 78,
+    "topic": "Destinations & Attractions",
+    "title": "The Amazing Taman Safari Bali: Conservation and Entertainment",
+    "content": "The **Amazing Taman Safari Bali** blends conservation with entertainment, providing a safe habitat for endangered species and a fun visitor experience. Beyond the safari ride, the park includes a waterpark, cultural performances, and hands-on animal encounters. It serves as an important center for environmental education and wildlife preservation. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 79,
+    "topic": "Destinations & Attractions",
+    "title": "Bogor Botanical Gardens, Java",
+    "content": "The **Bogor Botanical Gardens** (*Kebun Raya Bogor*) are an extensive historical park located in the city of Bogor, south of Jakarta. Established in 1817, they are one of the world's oldest and most scientifically important botanical gardens, housing thousands of plant species. The serene, cool environment makes it a popular escape from the heat of Jakarta. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 80,
+    "topic": "Destinations & Attractions",
+    "title": "Wae Rebo Village, Flores: Traditional Houses",
+    "content": "**Wae Rebo** is a small, traditional Manggaraian village in the mountains of Flores, famous for its unique, cone-shaped traditional houses (*Mbaru Niang*). Reaching the village requires a challenging hike, but the reward is a beautiful, peaceful setting and a genuine experience of local culture. It's recognized by UNESCO for its cultural preservation efforts. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 81,
+    "topic": "Destinations & Attractions",
+    "title": "Lake Maninjau, Sumatra: Scenic Views",
+    "content": "**Lake Maninjau** is a spectacular caldera lake in West Sumatra, known for its deep blue waters and the stunning, winding road (*Kelok 44*) that descends to its shores. The area offers a tranquil environment for fishing, swimming, and enjoying the scenic views. It's a less-visited gem compared to Lake Toba, offering a quiet Sumatran experience. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 82,
+    "topic": "Destinations & Attractions",
+    "title": "Klungkung Royal Palace (Puri Agung Semarapura), Bali",
+    "content": "The **Klungkung Royal Palace** was the seat of the Klungkung kingdom and a historically significant site in Bali. Although much of the original palace was destroyed, the **Kertha Gosa Pavilion**, an open-air hall of justice, remains the main attraction. Its ceiling is covered with traditional Balinese paintings depicting legal punishments and cosmic cycles. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 83,
+    "topic": "Destinations & Attractions",
+    "title": "Tanah Lot: Tide Access",
+    "content": "Access to the main temple area of **Tanah Lot** is only possible during **low tide** when a narrow causeway is exposed, connecting the rock formation to the mainland. Visitors should check the local tide schedule before planning their visit to ensure they can walk across. The temple itself is a sacred site and generally not entered by tourists. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 84,
+    "topic": "Destinations & Attractions",
+    "title": "Prambanan Temple: Ramayana Ballet",
+    "content": "An iconic cultural experience at **Prambanan Temple** is the open-air performance of the **Ramayana Ballet** on a stage with the illuminated temple as the backdrop. The traditional Javanese dance-drama tells the epic story of Prince Rama and Princess Sita. Performances are typically held during the dry season, adding a spectacular dimension to the visit. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 85,
+    "topic": "Destinations & Attractions",
+    "title": "Komodo Dragons on Rinca Island",
+    "content": "While Komodo National Park is the home of the Komodo Dragon, many tourists visit **Rinca Island** as an alternative to Komodo Island to see the dragons. Rinca is smaller and often offers a higher chance of spotting the giant lizards. All visits must be accompanied by a ranger who guides visitors and ensures their safety. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 86,
+    "topic": "Destinations & Attractions",
+    "title": "Wakatobi National Park: Coral Reefs",
+    "content": "The coral reefs of **Wakatobi National Park** are pristine and spectacularly diverse, with Wakatobi being an acronym for its four major islands. The park is part of the Coral Triangle, the global center of marine biodiversity, making it one of the world's most rewarding dive sites. The remote location helps maintain the extraordinary health of its ecosystem. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 87,
+    "topic": "Destinations & Attractions",
+    "title": "Curug Maribaya, Bandung: Hot Springs",
+    "content": "**Curug Maribaya** is a complex of hot springs and waterfalls located near Bandung in West Java. The area offers natural beauty with several picturesque waterfalls, but it is most famous for its natural hot springs, known for their therapeutic sulfur content. Visitors can enjoy bathing in the thermal pools and the lush surrounding forest. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 88,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Ayun Temple, Bali: Royal Temple",
+    "content": "**Taman Ayun Temple** is a magnificent royal temple of the Mengwi Kingdom, located in a quiet village near Ubud. The complex is famous for its stunning Balinese architectural features, including numerous multi-tiered shrines (*meru*) and a wide moat surrounding the outer courtyard. Its name translates to 'beautiful garden,' reflecting its serene, landscaped grounds. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 89,
+    "topic": "Destinations & Attractions",
+    "title": "Lake Toba: Sipiso-Piso Viewpoint",
+    "content": "The **Sipiso-Piso Waterfall** cascades dramatically into the massive caldera that forms Lake Toba. The main viewpoint offers spectacular panoramic views, allowing visitors to appreciate the immense scale of the lake and the surrounding lush mountains. It is one of the most popular photo opportunities in the North Sumatra region. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 90,
+    "topic": "Destinations & Attractions",
+    "title": "Jatiluwih Rice Terraces: Subak System",
+    "content": "The **Jatiluwih Rice Terraces** are not only beautiful but are also a living example of the **Subak** system, a democratic and traditional Balinese irrigation system. This system, dating back to the 9th century, is central to the Balinese philosophical concept of *Tri Hita Karana* (harmony between humans, nature, and the spiritual realm). This cultural landscape is key to its UNESCO status. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 91,
+    "topic": "Destinations & Attractions",
+    "title": "Ubud: Yoga and Wellness",
+    "content": "**Ubud** has established itself as a global center for yoga, meditation, and holistic wellness. The area is filled with retreat centers and studios offering classes for all levels, drawing on the region's spiritual atmosphere and lush natural surroundings. This focus on well-being is a major draw for visitors seeking relaxation and self-improvement. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 92,
+    "topic": "Destinations & Attractions",
+    "title": "Pura Besakih: Safety and Guides",
+    "content": "When visiting the holy **Pura Besakih** temple, it is important to be respectful and follow the guidance of local attendants. Visitors should always wear a sarong and sash, which can be rented or purchased at the entrance. While guides may offer their services, they are not strictly mandatory, but their historical context can enrich the experience. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 93,
+    "topic": "Destinations & Attractions",
+    "title": "Gili Trawangan: No Motorized Transport",
+    "content": "A major unique feature of the **Gili Islands** is their strict ban on all motorized transport, ensuring a quiet, pollution-free environment. On Gili Trawangan, the main modes of transport are walking, bicycles, or the horse-drawn carriage known as a *cidomo*. This ban creates a peaceful atmosphere, making the islands ideal for a digital detox. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 94,
+    "topic": "Destinations & Attractions",
+    "title": "Canggu, Bali: Digital Nomad Hub",
+    "content": "**Canggu**, located on the south coast of Bali, has rapidly become a trendy hub for surfers, digital nomads, and healthy lifestyle enthusiasts. It features a relaxed, bohemian vibe with beach clubs, cafes specializing in healthy food, and boutique shops. The area is known for its black-sand beaches and excellent surf breaks, particularly Echo Beach. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 95,
+    "topic": "Destinations & Attractions",
+    "title": "Museum Pasifika, Bali: Asian-Pacific Art",
+    "content": "The **Museum Pasifika** is located in the Nusa Dua complex and is dedicated to preserving and exhibiting the art and culture of the Asian-Pacific region. It houses a vast collection of historical and cultural artifacts, paintings, and sculptures from over 200 artists across 25 countries. It's a key destination for art lovers visiting Bali. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 96,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Nasional Teluk Cenderawasih (Cenderawasih Bay)",
+    "content": "**Cenderawasih Bay National Park** in Papua is Indonesia's largest marine national park and a globally significant location for marine research. It is most famous for its reliable sightings of **Whale Sharks** and its pristine coral reefs, offering some of the best diving in Eastern Indonesia. The park is a remote but rewarding destination for eco-tourists. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 97,
+    "topic": "Destinations & Attractions",
+    "title": "The House of Sampoerna, Surabaya, Java",
+    "content": "**The House of Sampoerna** is a historical building and museum in Surabaya that chronicles the history of the Sampoerna cigarette company and its founder. The museum offers a glimpse into the production of *kretek* (clove) cigarettes and features a café and an art gallery. It's a unique stop for history and industry enthusiasts in East Java. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 98,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Sari: Underground Mosque",
+    "content": "A particularly intriguing part of the **Taman Sari Water Castle** is the **Sumur Gumuling**, a unique circular structure that was once an underground mosque. Its central elevated platform and four staircases leading to it were designed to create unique acoustics, enhancing the voice of the person leading the prayer. It’s a remarkable piece of Javanese architecture. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 99,
+    "topic": "Destinations & Attractions",
+    "title": "Borobudur: Stupas and Buddha Statues",
+    "content": "The upper three circular platforms of **Borobudur** feature 72 small, perforated stupas, each containing a **statue of the Buddha**. Tourists often try to reach their arm into the stupas to touch the statue, which is believed to bring good luck. Visitors should avoid climbing on the stupas or sitting on the Buddha statues as this is considered highly disrespectful. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 100,
+    "topic": "Destinations & Attractions",
+    "title": "Prambanan Temple: Candi Shiva Mahadeva",
+    "content": "The tallest and most central temple at **Prambanan** is the **Candi Shiva Mahadeva**, dedicated to the Destroyer, Shiva. This towering structure is the largest in the complex and is surrounded by smaller shrines. Its interior contains four rooms, with the main room housing a large statue of Shiva, the focus of the entire complex. ",
+    "source": "https://www.pettitts.co.uk/guides/indonesia-landmarks"
+  },
+  {
+    "id": 101,
+    "topic": "Destinations & Attractions",
+    "title": "Mount Bromo: Sea of Sand",
+    "content": "The **Sea of Sand** is the vast expanse of volcanic ash caldera that surrounds Mount Bromo. Tourists often cross this dramatic, dusty plain, which has been preserved since ancient eruptions, typically by a 4x4 jeep or on horseback. It creates a stark, beautiful foreground to the smoky peak of Bromo itself. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 102,
+    "topic": "Destinations & Attractions",
+    "title": "Komodo National Park: Manta Rays",
+    "content": "The waters around Komodo National Park are a crucial feeding ground for **Manta Rays**, making it one of the best places in the world to swim with these majestic creatures. Popular diving and snorkeling spots like Manta Point offer reliable sightings, where the manta rays come to be cleaned by smaller fish. The marine environment is protected to preserve this wildlife. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 103,
+    "topic": "Destinations & Attractions",
+    "title": "Taman Mini Indonesia Indah: Cable Car",
+    "content": "**Taman Mini Indonesia Indah** features a **cable car** system that provides a panoramic view of the park, including a unique perspective of the archipelago's map in the central lake. Riding the cable car is an excellent way to grasp the layout and cultural diversity of the entire Indonesian archipelago represented in the park. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 104,
+    "topic": "Destinations & Attractions",
+    "title": "Uluwatu Temple: Macaque Monkeys",
+    "content": "Be cautious of the **macaque monkeys** that inhabit the forest around **Uluwatu Temple**, as they are notorious for snatching items like sunglasses, hats, and jewelry from tourists. It's recommended to secure all loose belongings before entering the temple area. Local staff sometimes offer to 'exchange' stolen items for a small fee, which they use to purchase food for the monkeys. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 105,
+    "topic": "Destinations & Attractions",
+    "title": "Kelapa Gading, Jakarta: Culinary Destination",
+    "content": "**Kelapa Gading** in North Jakarta is a bustling, modern area that has become a major **culinary destination** with numerous restaurants, cafes, and street food vendors. The district is known for its wide variety of Indonesian regional dishes and international cuisine, often centered around its large shopping malls. It’s a great place to experience the city's diverse food scene. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 106,
+    "topic": "Destinations & Attractions",
+    "title": "Gili Air: Beachfront Cafes and Restaurants",
+    "content": "**Gili Air** is lined with cozy beachfront cafes and restaurants, many of which offer beanbag seating and stunning sunset views over Lombok's Mount Rinjani. These spots provide a relaxed dining experience, often serving fresh seafood grilled over an open flame. The vibe is significantly more low-key than the main strip on Gili Trawangan. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 107,
+    "topic": "Destinations & Attractions",
+    "title": "Puncak Jaya, Papua: The Highest Peak",
+    "content": "**Puncak Jaya** (Carstensz Pyramid) is the highest mountain in Indonesia, located in the Sudirman Range of Papua. It is one of the world's 'Seven Summits' and presents a formidable challenge for mountaineers, featuring technical climbs and a rare equatorial glacier. Reaching the peak is a demanding expedition requiring permits and experienced guides. ",
+    "source": "https://justgoexploring.com/destinations/places-to-visit-in-indonesia/"
+  },
+  {
+    "id": 108,
+    "topic": "Safety Tips",
+    "title": "Street Crime and Pickpocketing",
+    "content": "Be highly alert to the risk of **street crime**, such as bag-snatching and pickpocketing, especially in crowded tourist areas like Bali and at transport hubs. Thieves on motorcycles often target pedestrians, so keep bags concealed and away from the roadside. Only carry essential items and keep copies of your passport and bank cards separate from the originals. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 109,
+    "topic": "Safety Tips",
+    "title": "Drink Spiking and Methanol Poisoning",
+    "content": "There have been reported cases of drink spiking linked to sexual assault, particularly in tourist hot spots like Bali, Lombok, and the Gili Islands. Furthermore, be extremely careful of illegal alcohol that may contain **dangerous substances like methanol**, which can be fatal. **Always watch your drinks being prepared** and never accept drinks from strangers at bars or clubs. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 110,
+    "topic": "Safety Tips",
+    "title": "Choosing Reputable Taxis and Ride-Share",
+    "content": "To ensure your safety when traveling by car, use only **registered taxi companies** like Bluebird, Silverbird, or Express, and verify that the meter is running. If using a ride-share app (Grab/Gojek), confirm the driver's identity matches the app and **share your journey details** with a friend. Be wary of unrequested street pickups from drivers claiming to be registered with the apps. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 111,
+    "topic": "Safety Tips",
+    "title": "ATM and Credit Card Fraud",
+    "content": "**Credit card fraud** and skimming are common in Indonesia, so never lose sight of your card during transactions. Use **ATMs located inside banks or public areas**, and be wary of any fake telephone numbers posted on ATMs asking for card details. Only use official, licensed money changers that display a Bank of Indonesia logo and a QR code to avoid being short-changed. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 112,
+    "topic": "Safety Tips",
+    "title": "Health Insurance and Medical Services",
+    "content": "While not mandatory, **comprehensive health insurance is highly recommended** due to the high cost of medical treatment and the risk of illnesses like 'Bali Belly' (diarrhea), dengue, or even malaria in some remote areas. Medical facilities can be inadequate outside of major cities, and you may be required to **pay in cash in advance** for services. ",
+    "source": "https://www.atlys.com/blog/indonesia-entry-requirements"
+  },
+  {
+    "id": 113,
+    "topic": "Safety Tips",
+    "title": "Water Safety and Food Precautions",
+    "content": "You should **never drink tap water** in Indonesia; always consume bottled or filtered water. When eating, ensure food, particularly street food, is freshly prepared and served hot to minimize the risk of foodborne illnesses. Exercise caution with ice, as it may not be made from purified water, and ensure raw fruits and vegetables have been washed with safe water. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 114,
+    "topic": "Safety Tips",
+    "title": "Volcanic and Natural Disaster Preparedness",
+    "content": "Indonesia is seismically active, and you should always be aware of the risk of earthquakes, tsunamis, and volcanic activity. **Respect all exclusion zones** near active volcanoes like Mount Bromo and Mount Agung, and follow the advice of local authorities, including any evacuation orders. Carry your passport in a waterproof bag and monitor local media for updates. ",
+    "source": "https://travel.gc.ca/destinations/indonesia"
+  },
+  {
+    "id": 115,
+    "topic": "Safety Tips",
+    "title": "Diving Safety",
+    "content": "If you plan to dive, use only **reputable and credentialed dive operators** and ensure they carry the necessary safety equipment, particularly oxygen. Verify that your insurance covers diving activities, including transfer to a **hyperbaric chamber** if necessary. Beginners should ensure their instructor clearly explains their insurance and emergency protocols. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 116,
+    "topic": "Safety Tips",
+    "title": "Avoiding Unrest and Protests",
+    "content": "While the political situation is generally stable, protests or unrest can occur, sometimes turning violent without warning. **Avoid all protests, demonstrations, and political rallies** in cities like Jakarta. If you encounter any, calmly leave the area immediately, as local law enforcement can be heavily involved. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 117,
+    "topic": "Safety Tips",
+    "title": "Sexual Assault Awareness",
+    "content": "Reported cases of rape and sexual assault are a concern in popular tourist areas like Bali and Lombok. Female travelers should **avoid walking alone after dark** in poorly lit areas. Exercise caution with strangers who are overly friendly or offer unsolicited help, and keep your relationship status discreet to avoid unwanted attention. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 118,
+    "topic": "Culture & Etiquette",
+    "title": "Respecting the Left Hand",
+    "content": "In Indonesian culture, the **left hand is traditionally considered unclean** because it is used for bathroom hygiene. Therefore, it is important to avoid using your left hand when greeting someone, handing something to another person, or eating. Always use your **right hand** for giving, taking, eating, and pointing to show respect. ",
+    "source": "https://www.worldnomads.com/explore/southeast-asia/indonesia/indonesia-etiquette-how-you-can-avoid-causing-offence"
+  },
+  {
+    "id": 119,
+    "topic": "Culture & Etiquette",
+    "title": "Modest Dress at Religious Sites",
+    "content": "When visiting temples, mosques, or other religious or sacred sites, it is crucial to **dress modestly**. This typically means covering your shoulders, upper arms, and knees, regardless of your gender. Women may be required to wear a headscarf at a mosque, and both men and women must often wear a sarong and sash at Balinese temples. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 120,
+    "topic": "Culture & Etiquette",
+    "title": "Public Displays of Affection (PDA)",
+    "content": "Public displays of affection, such as kissing or hugging, are **generally frowned upon** and considered inappropriate in most parts of Indonesia, even for married couples. It is advisable to keep your relationship discreet and avoid overt affectionate behavior in public places. This is a matter of respect for traditional, conservative values. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 121,
+    "topic": "Culture & Etiquette",
+    "title": "Respecting Elders and Hierarchy",
+    "content": "Hierarchy and respect for elders are central to Indonesian culture; it is important to show **respect to people with status, power, position, and age**. When greeting an older person, a younger person might perform *salim*, a revering handshake that involves touching the back of the elder's hand to their forehead. Always greet elders politely. ",
+    "source": "https://en.wikipedia.org/wiki/Etiquette_in_Indonesia"
+  },
+  {
+    "id": 122,
+    "topic": "Culture & Etiquette",
+    "title": "Removing Your Shoes",
+    "content": "It is a fundamental sign of respect to **remove your shoes or sandals** before entering someone's home, and often before entering shops or some guesthouses. Look for a pile of shoes outside the door as a clear sign of the local custom. This practice helps keep the living areas clean and honors the space. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 123,
+    "topic": "Culture & Etiquette",
+    "title": "The Importance of Smiling and Politeness",
+    "content": "Indonesians are renowned for being friendly and welcoming, and you should always return a smile to initiate social contact. It is important to be **calm and overly polite** in all interactions, even in conflict, as aggression or arrogance is highly shunned. A huge smile and kind answers will greatly aid in navigating social situations and getting assistance. ",
+    "source": "https://www.worldnomads.com/explore/southeast-asia/indonesia/indonesia-etiquette-how-you-can-avoid-causing-offence"
+  },
+  {
+    "id": 124,
+    "topic": "Culture & Etiquette",
+    "title": "Avoiding Offense with Feet",
+    "content": "Similar to the left hand, the **sole of the foot is considered the lowest and dirtiest part of the body** and should not be pointed at a person or a sacred object. When sitting, avoid pointing your feet directly at someone, especially an elder or an important person. Crossing your legs so the sole of your foot points at another person can be seen as disrespectful. ",
+    "source": "https://www.worldnomads.com/explore/southeast-asia/indonesia/indonesia-etiquette-how-you-can-avoid-causing-offence"
+  },
+  {
+    "id": 125,
+    "topic": "Culture & Etiquette",
+    "title": "Responding to Hospitality and Food",
+    "content": "When visiting a local home, it is customary to **accept any food or beverage** offered to you as a sign of appreciation. When eating, it is generally considered polite to **finish your entire plate of food** to show respect for the cook's effort and appreciation for their hospitality. In many regions, Padang food is eaten with the right hand. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 126,
+    "topic": "Culture & Etiquette",
+    "title": "Patience and 'Jam Karet' (Rubber Time)",
+    "content": "Indonesian culture has a relaxed stance on time, often referred to as '*jam karet*' or 'rubber time.' You should be **patient** and expect that transport, appointments, and services may not run strictly on schedule. Getting flustered or angry will not speed things up, but a polite, calm demeanor is appreciated and will help you get further. ",
+    "source": "https://www.worldnomads.com/explore/southeast-asia/indonesia/indonesia-etiquette-how-you-can-avoid-causing-offence"
+  },
+  {
+    "id": 127,
+    "topic": "Culture & Etiquette",
+    "title": "Asking Questions and Showing Interest",
+    "content": "Indonesians are generally proud of their culture and happy to share it with visitors. If you are unsure about how to act in a situation or curious about a local practice, it is polite to **ask questions** to your guide or local friends. This shows respect and curiosity, which is highly appreciated, and helps you avoid causing accidental offense. ",
+    "source": "https://www.worldnomads.com/explore/southeast-asia/indonesia/indonesia-etiquette-how-you-can-avoid-causing-offence"
+  },
+  {
+    "id": 128,
+    "topic": "Culture & Etiquette",
+    "title": "Consuming Alcohol",
+    "content": "While alcohol is available in many tourist areas like Bali, it is **illegal in many parts of Indonesia**, and public drunkenness is strongly frowned upon. In more conservative, non-tourist, or Muslim-majority areas, consuming alcohol should be done discreetly, if at all. It is important to be mindful of local norms, as excessive public drinking goes against social values. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 129,
+    "topic": "Culture & Etiquette",
+    "title": "Greetings and Basic Phrases",
+    "content": "A simple greeting like 'selamat pagi' (good morning), 'selamat siang' (good afternoon), or 'terimakasih' (thank you) can go a long way. Indonesians usually greet with a **soft handshake** using the right hand. Learning a few basic phrases in Indonesian or a regional dialect is highly appreciated by locals and is a great way to break the ice. ",
+    "source": "https://www.backindo.com/etiquette-in-indonesia-a-dos-and-donts-guide/"
+  },
+  {
+    "id": 130,
+    "topic": "Country-Specific Rules",
+    "title": "Strict Drug Laws and Penalties",
+    "content": "Indonesia has extremely **strict anti-narcotics laws**, and drug offenses are not treated lightly by the authorities. Penalties for possession, trafficking, and use of illegal drugs, even in small amounts, include **severe prison sentences and the death penalty**. Tourists should not, under any circumstances, get involved with illegal drugs. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 131,
+    "topic": "Country-Specific Rules",
+    "title": "Respect for Sacred Sites and Objects in Bali",
+    "content": "The Bali Provincial Government stresses that tourists must respect the sanctity of temples, sacred statues (*pratimas*), and religious symbols. This means **never defiling holy places** by acting disrespectfully, such as climbing on temple structures for photos or being nude/indecent at a site. Tourists should also respect ceremonial processions, often by waiting patiently for them to pass. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 132,
+    "topic": "Country-Specific Rules",
+    "title": "Using Local Currency (Rupiah)",
+    "content": "You are required to conduct all trade, transactions, and payments in Indonesia using the local currency, the **Indonesian Rupiah (IDR)**. While digital payments are widely accepted, it's a good idea to carry cash for smaller vendors or remote areas. Only exchange currency at licensed money changers displaying the Bank Indonesia logo and QR code. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 133,
+    "topic": "Country-Specific Rules",
+    "title": "Traffic Laws and Licensing",
+    "content": "Foreigners must obey local traffic regulations, which includes having a **valid local or International Driving Permit (IDP)** to operate a scooter or car. Drivers must always wear a helmet, not overload their bike, and not drive under the influence. Authorities are increasing enforcement, and tourists caught without a license face heavy fines. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 134,
+    "topic": "Country-Specific Rules",
+    "title": "Social Media Use and Hate Speech",
+    "content": "Tourists should be cautious about their posts on social media. Avoid spreading **hate speech, hoaxes, or disrespectful/aggressive content** towards officials, local people, or even other tourists, as this can lead to legal trouble. It's best to be respectful and positive when discussing your experiences online. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 135,
+    "topic": "Country-Specific Rules",
+    "title": "Ramadan Etiquette (Fasting Month)",
+    "content": "During the Islamic holy month of Ramadan, tourists, even non-Muslims, should be considerate of those who are fasting. This means **avoiding eating, drinking, or smoking in public** during daylight hours. While hotels and tourist restaurants may accommodate guests, it is a sign of respect to practice discretion. ",
+    "source": "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"
+  },
+  {
+    "id": 136,
+    "topic": "Country-Specific Rules",
+    "title": "Use of Single-Use Plastics in Bali",
+    "content": "Bali has strict regulations in place to reduce environmental impact, including a ban on **single-use plastics** such as plastic bags, straws, and Styrofoam. Tourists are encouraged to carry reusable water bottles and shopping bags. Adhering to this is part of respecting the island's conservation efforts. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 137,
+    "topic": "Country-Specific Rules",
+    "title": "Carrying Identification",
+    "content": "It is a rule that you must **always carry identification** (or a copy) such as your passport or resident stay permit while in Indonesia. Officials, particularly in tourist areas, have the authority to conduct ID checks. While a copy is safer to carry, the original should be accessible if authorities demand it. ",
+    "source": "https://www.smartraveller.gov.au/destinations/asia/indonesia"
+  },
+  {
+    "id": 138,
+    "topic": "Country-Specific Rules",
+    "title": "Avoiding Unlicensed Work",
+    "content": "Tourists who enter Indonesia on a visa (like the VOA) are **not permitted to work or run a business**. Engaging in any employment without the proper work visa or permits is illegal and can lead to heavy fines, detention, and immediate deportation. This rule is strictly enforced, especially in popular remote-work locations. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 139,
+    "topic": "Country-Specific Rules",
+    "title": "Licensed Accommodation Requirement",
+    "content": "When booking your stay, you must opt for **legal, registered accommodation** such as licensed hotels, guesthouses, or villas. These establishments adhere to local regulations and facilitate necessary reporting to authorities. Staying in unlicensed accommodation can lead to legal issues for both the property owner and the tourist. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  },
+  {
+    "id": 140,
+    "topic": "Country-Specific Rules",
+    "title": "Respecting Funeral Processions",
+    "content": "In Balinese culture, funeral processions (*Ngaben*) and other ceremonial rituals are highly significant and are not to be disrupted. If you encounter a procession, you should **stop your vehicle, pull over, and wait patiently** for it to pass. Attempting to pass or show impatience is a major sign of disrespect. ",
+    "source": "https://finnsbeachclub.com/guides/local-customs-and-laws-bali/"
+  }
 ]
