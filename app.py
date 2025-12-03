@@ -11,8 +11,8 @@ logger = DialogueLogger()
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Chatbot",
-    page_icon="🤖",
+    page_title="IndoGuide",
+    page_icon="🇮🇩",
     layout="centered"
 )
 
@@ -20,7 +20,6 @@ st.set_page_config(
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
     st.session_state.session_log = logger.create_session(st.session_state.session_id)
-    st.session_state.messages = []
     st.session_state.llm_client = LLMClient()
     st.session_state.system_prompt = SYSTEM_PROMPT
 
@@ -33,7 +32,6 @@ def restart_conversation():
     # Create new session
     st.session_state.session_id = str(uuid.uuid4())
     st.session_state.session_log = logger.create_session(st.session_state.session_id)
-    st.session_state.messages = []
     st.session_state.llm_client.reset_conversation()
 
 
@@ -42,7 +40,7 @@ def restart_conversation():
 # Session info and restart button in columns
 col1, col2 = st.columns([3, 1])
 with col1:
-    st.title("🤖 AI Chatbot")
+    st.title("🇮🇩 IndoGuide")
     st.caption(f"**Session ID:** `{st.session_state.session_id}`")
 with col2:
     # Add custom CSS to vertically align to bottom and right-align the button
@@ -64,8 +62,8 @@ with col2:
 
 st.divider()
 
-# Display chat messages
-for message in st.session_state.messages:
+# Display chat messages from LLM client
+for message in st.session_state.llm_client.get_messages():
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
@@ -74,8 +72,7 @@ if prompt := st.chat_input("Type your message here..."):
     # Get user timestamp
     user_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
     
-    # Add user message to chat
-    st.session_state.messages.append({"role": "user", "content": prompt})
+    # Display user message
     with st.chat_message("user"):
         st.markdown(prompt)
     
@@ -92,21 +89,20 @@ if prompt := st.chat_input("Type your message here..."):
         message_placeholder = st.empty()
         full_response = ""
         
-        # Stream the response
-        for chunk in st.session_state.llm_client.chat_stream(
-            user_message=prompt,
-            system_prompt=st.session_state.system_prompt
-        ):
-            full_response += chunk
-            message_placeholder.markdown(full_response + "▌")
+        # Show thinking indicator while waiting for response
+        with st.spinner("Thinking..."):
+            # Stream the response (auto_add_messages=True by default)
+            for chunk in st.session_state.llm_client.chat_stream(
+                user_message=prompt,
+                system_prompt=st.session_state.system_prompt
+            ):
+                full_response += chunk
+                message_placeholder.markdown(full_response + "▌")
 
         message_placeholder.markdown(full_response)
     
     # Get bot timestamp (when streaming finished)
     bot_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # Add assistant message to chat
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
     
     # Log bot turn
     logger.add_turn(
