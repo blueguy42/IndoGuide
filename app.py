@@ -40,7 +40,81 @@ def restart_conversation():
 # Session info and restart button in columns
 col1, col2 = st.columns([3, 1])
 with col1:
-    st.title("🇮🇩 IndoGuide")
+    st.markdown(
+        """
+        <style>
+        .info-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .info-button-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .info-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #f0f2f6;
+            color: #31333F;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: help;
+            border: 1px solid #d0d0d0;
+            transition: all 0.2s;
+        }
+        .info-button:hover {
+            background-color: #e0e2e6;
+            border-color: #a0a0a0;
+        }
+        .tooltip-text {
+            visibility: hidden;
+            width: 400px;
+            background-color: #262730;
+            color: #fff;
+            text-align: left;
+            border-radius: 8px;
+            padding: 12px 16px;
+            position: absolute;
+            z-index: 1000;
+            top: 125%;
+            left: 50%;
+            margin-left: -200px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 14px;
+            line-height: 1.5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #262730 transparent;
+        }
+        .info-button-wrapper:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        </style>
+        <div class="info-container">
+            <h1 style="margin: 0;">🇮🇩 IndoGuide</h1>
+            <div class="info-button-wrapper">
+                <span class="info-button">i</span>
+                <span class="tooltip-text">IndoGuide is your smart travel companion designed to make exploring Indonesia effortless. Ask away information on must-see destinations, visas, transportation, safety, and local etiquettes, so you can travel with confidence. Whether you're planning your itinerary or navigating on the go, IndoGuide helps you experience Indonesia like a pro!</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.caption(f"**Session ID:** `{st.session_state.session_id}`")
 with col2:
     # Add custom CSS to vertically align to bottom and right-align the button

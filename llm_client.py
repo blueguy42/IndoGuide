@@ -1,10 +1,11 @@
 import os
 from openai import OpenAI
 from typing import Generator, Optional, List, Dict
+from config import API_KEY_FILE, MODEL_NAME
 
 
 class LLMClient:
-    def __init__(self, api_key_file: str = "openai.key", model: str = "gpt-5-nano-2025-08-07"):
+    def __init__(self, api_key_file: str = API_KEY_FILE, model: str = MODEL_NAME):
         """
         Initialize the OpenAI client with Responses API
         

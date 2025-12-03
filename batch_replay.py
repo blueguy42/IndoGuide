@@ -3,11 +3,12 @@ import uuid
 from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
+from config import SYSTEM_PROMPT
 
 
 def run_batch_replay(
     prompts_file: str,
-    system_prompt: str = "You are a helpful AI assistant.",
+    system_prompt: str = SYSTEM_PROMPT,
     output_session_id: str = None
 ):
     """
