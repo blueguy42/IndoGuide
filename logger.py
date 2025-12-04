@@ -37,8 +37,8 @@ class DialogueLogger:
     def add_turn(
         self, 
         session_log: Dict[str, Any], 
-        role: str, 
-        text: str, 
+        speaker: str, 
+        utterance: str, 
         timestamp: str
     ):
         """
@@ -46,19 +46,19 @@ class DialogueLogger:
         
         Args:
             session_log: The session log dictionary
-            role: 'user' or 'bot'
-            text: The message text
+            speaker: 'user' or 'assistant'
+            utterance: The message text
             timestamp: ISO format timestamp
         """
         turn = {
-            "role": role,
+            "speaker": speaker,
             "timestamp": timestamp,
-            "text": text
+            "utterance": utterance
         }
         session_log["turns"].append(turn)
         
         # Print to console
-        print(f"[{timestamp}] {role.upper()}: {text}")
+        print(f"[{timestamp}] {speaker.upper()}: {utterance}")
     
     def save_session(self, session_log: Dict[str, Any]):
         """

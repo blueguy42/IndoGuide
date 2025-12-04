@@ -138,7 +138,8 @@ st.divider()
 
 # Display chat messages from LLM client
 for message in st.session_state.llm_client.get_messages():
-    with st.chat_message(message["role"]):
+    avatar = "icon_assistant.png" if message["role"] == "assistant" else "icon_user.png"
+    with st.chat_message(message["role"], avatar=avatar):
         st.markdown(message["content"])
 
 # Chat input
@@ -147,19 +148,19 @@ if prompt := st.chat_input("Type your message here..."):
     user_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
     
     # Display user message
-    with st.chat_message("user"):
+    with st.chat_message("user", avatar="icon_user.png"):
         st.markdown(prompt)
     
     # Log user turn
     logger.add_turn(
         st.session_state.session_log,
-        role="user",
-        text=prompt,
+        speaker="user",
+        utterance=prompt,
         timestamp=user_timestamp
     )
     
     # Get bot response
-    with st.chat_message("assistant"):
+    with st.chat_message("assistant", avatar="icon_assistant.png"):
         message_placeholder = st.empty()
         full_response = ""
         
@@ -181,8 +182,8 @@ if prompt := st.chat_input("Type your message here..."):
     # Log bot turn
     logger.add_turn(
         st.session_state.session_log,
-        role="bot",
-        text=full_response,
+        speaker="assistant",
+        utterance=full_response,
         timestamp=bot_timestamp
     )
     
