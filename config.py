@@ -12,6 +12,15 @@ LOG_DIRECTORY = "logs"
 PROMPTS_FILE = "prompts.json"
 PROMPT_NAME = "indoguide"
 
+# RAG Configuration
+KNOWLEDGE_BASE_FILE = "indonesia_knowledge_base.json"
+CHROMA_DB_PATH = "./chroma_db"
+EMBEDDING_MODEL = "text-embedding-3-small"
+CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+LLM_RERANKER_MODEL = "gpt-5-nano-2025-08-07"
+TOP_K_RETRIEVAL = 10  # Number of candidates to retrieve
+TOP_K_FINAL = 4  # Number of final snippets to use
+
 
 def load_prompts():
     """Load prompts from the prompts repository"""
@@ -42,3 +51,4 @@ def get_prompt(name: str = PROMPT_NAME):
     return "You are a helpful assistant."
 
 SYSTEM_PROMPT = get_prompt(PROMPT_NAME)
+

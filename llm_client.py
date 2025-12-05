@@ -121,6 +121,61 @@ class LLMClient:
         
         return response_id
     
+    def chat(
+        self, 
+        user_message: str, 
+        system_prompt: Optional[str] = None,
+        auto_add_messages: bool = False,
+        temperature: float = 0.0
+    ) -> str:
+        """
+        Send a message and get a complete response using Responses API (non-streaming)
+        Useful for tasks that don't need streaming like reranking.
+        
+        Args:
+            user_message: The user's message
+            system_prompt: Optional system prompt for instruction
+            auto_add_messages: If True, automatically add messages to history (default: False for utility tasks)
+            temperature: Sampling temperature (default: 0.0 for deterministic output)
+            
+        Returns:
+            The complete response text
+        """
+        # Add user message to history if auto_add_messages is enabled
+        if auto_add_messages:
+            self.add_user_message(user_message)
+        
+        # Prepare the request parameters
+        params = {
+            "model": self.model,
+            "input": user_message,
+            "stream": False,
+            "temperature": temperature
+        }
+        
+        # Add system prompt as instruction if provided
+        if system_prompt:
+            params["instructions"] = system_prompt
+        
+        # Note: We don't use previous_response_id for utility tasks like reranking
+        # to avoid polluting the main conversation context
+        
+        # Create non-streaming response
+        response = self.client.responses.create(**params)
+        
+        # Extract the full text from the response
+        full_text = ""
+        for output_item in response.output:
+            if output_item.type == "text":
+                full_text += output_item.text
+        
+        # Add assistant message to history if auto_add_messages is enabled
+        if auto_add_messages:
+            self.add_assistant_message(full_text)
+        
+        return full_text
+
+    
     def reset_conversation(self):
         """Reset the conversation context and message history"""
         self.previous_response_id = None

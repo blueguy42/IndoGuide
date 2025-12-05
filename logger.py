@@ -39,7 +39,8 @@ class DialogueLogger:
         session_log: Dict[str, Any], 
         speaker: str, 
         utterance: str, 
-        timestamp: str
+        timestamp: str,
+        retrieved_snippets: List[Dict[str, Any]] = None
     ):
         """
         Add a turn to the session log
@@ -49,12 +50,18 @@ class DialogueLogger:
             speaker: 'user' or 'assistant'
             utterance: The message text
             timestamp: ISO format timestamp
+            retrieved_snippets: Optional list of retrieved RAG snippets
         """
         turn = {
             "speaker": speaker,
             "timestamp": timestamp,
             "utterance": utterance
         }
+        
+        # Add retrieved snippets if provided
+        if retrieved_snippets is not None:
+            turn["retrieved_snippets"] = retrieved_snippets
+        
         session_log["turns"].append(turn)
         
         # Print to console
