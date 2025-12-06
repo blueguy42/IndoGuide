@@ -21,6 +21,39 @@ LLM_RERANKER_MODEL = "gpt-5-nano-2025-08-07"
 TOP_K_RETRIEVAL = 10  # Number of candidates to retrieve
 TOP_K_FINAL = 4  # Number of final snippets to use
 
+# RAG Configuration
+RAG_CONFIGS = {
+    1: {
+        "name": "Baseline (No Reranking)",
+        "cli_key": "baseline",
+        "details": [
+            "• Top-10 initial vector retrieval",
+            "• Direct top-4 selection"
+        ]
+    },
+    2: {
+        "name": "Cross-Encoder Reranking",
+        "cli_key": "crossencoder",
+        "details": [
+            "• Top-10 initial vector retrieval",
+            "• Top-4 Cross-Encoder reranking"
+        ]
+    },
+    3: {
+        "name": "LLM Reranking",
+        "cli_key": "llm",
+        "details": [
+            "• Top-10 initial vector retrieval",
+            "• Top-4 LLM reranking"
+        ]
+    }
+}
+
+RAG_ID_TO_NAME = {k: v["name"] for k, v in RAG_CONFIGS.items()}
+RAG_CLI_KEY_TO_ID = {v["cli_key"]: k for k, v in RAG_CONFIGS.items()}
+RAG_NAME_TO_ID = {v["name"]: k for k, v in RAG_CONFIGS.items()}
+RAG_ID_TO_DETAILS = {k: (v["name"], v["details"]) for k, v in RAG_CONFIGS.items()}
+
 
 def load_prompts():
     """Load prompts from the prompts repository"""

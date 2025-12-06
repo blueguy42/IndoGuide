@@ -11,7 +11,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT, MODEL_NAME
+from config import SYSTEM_PROMPT, MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS
 
 
 class ChatCLI:
@@ -26,26 +26,15 @@ class ChatCLI:
         self.running = True
         self.rag_config_name = rag_config
         
-        # Map config name to numeric value for RAGSystem
-        config_map = {
-            "baseline": 1,
-            "crossencoder": 2,
-            "llm": 3
-        }
-        self.rag_config = config_map[rag_config]
+        self.rag_config = RAG_CLI_KEY_TO_ID[rag_config]
         
         # Initialize logger
         self.session_id = str(uuid.uuid4())
         self.logger = DialogueLogger()
-        self.session_log = self.logger.create_session(self.session_id)
+        self.session_log = self.logger.create_session(self.session_id, self.rag_config)
         
         # Initialize RAG system
-        config_display = {
-            "baseline": "Baseline (No Reranking)",
-            "crossencoder": "Cross-Encoder Reranking",
-            "llm": "LLM Reranking"
-        }
-        print(f"\nInitializing RAG system ({config_display[rag_config]})...")
+        print(f"\nInitializing RAG system ({RAG_ID_TO_NAME[self.rag_config]})...")
         self.rag_system = RAGSystem(config=self.rag_config)
         print("RAG system ready.\n")
         
@@ -55,12 +44,7 @@ class ChatCLI:
         print("IndoGuide - CLI Interface")
         print("="*60)
         print(f"\nSession ID: {self.session_id}")
-        config_display = {
-            "baseline": "Baseline (No Reranking)",
-            "crossencoder": "Cross-Encoder Reranking",
-            "llm": "LLM Reranking"
-        }
-        print(f"RAG Configuration: {config_display[self.rag_config_name]}")
+        print(f"RAG Configuration: {RAG_ID_TO_NAME[self.rag_config]}")
         print("\nIndoGuide is your smart travel companion designed to make")
         print("exploring Indonesia effortless. Ask away information on must-see")
         print("destinations, visas, transportation, safety, and local etiquettes,")
@@ -114,7 +98,7 @@ class ChatCLI:
         
         # Create new session
         self.session_id = str(uuid.uuid4())
-        self.session_log = self.logger.create_session(self.session_id)
+        self.session_log = self.logger.create_session(self.session_id, self.rag_config)
         self.llm_client.reset_conversation()
         print(f"\nConversation reset. New session ID: {self.session_id}\n")
     
@@ -122,20 +106,14 @@ class ChatCLI:
         """Display current RAG configuration"""
         print("\n" + "="*60)
         print("Current RAG Configuration")
-        print("="*60)
+        print("=" * 60)
         
-        config_info = {
-            "baseline": ("Baseline (No Reranking)", ["• Top-10 initial vector retrieval", "• Direct top-4 selection"]),
-            "crossencoder": ("Cross-Encoder Reranking", ["• Top-10 initial vector retrieval", "• Top-4 Cross-Encoder reranking"]),
-            "llm": ("LLM Reranking", ["• Top-10 initial vector retrieval", "• Top-4 LLM reranking"])
-        }
-        
-        config_name, details = config_info[self.rag_config_name]
+        config_name, details = RAG_ID_TO_DETAILS[self.rag_config]
         print(f"\nConfiguration: {config_name}")
         for detail in details:
             print(detail)
         
-        print("\n" + "="*60 + "\n")
+        print("\n" + "=" * 60 + "\n")
     
     def handle_command(self, command: str) -> bool:
         """
@@ -246,15 +224,23 @@ class ChatCLI:
 
 def main():
     """Main entry point for the CLI"""
+    # Generate help text dynamically from config
+    help_parts = ["RAG configuration: "]
+    for cli_key, config_id in RAG_CLI_KEY_TO_ID.items():
+        config_name = RAG_CONFIGS[config_id]["name"]
+        help_parts.append(f"{cli_key}={config_name}")
+    help_parts.append(f"(default: {list(RAG_CLI_KEY_TO_ID.keys())[0]})")
+    help_text = ", ".join(help_parts)
+    
     parser = argparse.ArgumentParser(
         description="IndoGuide CLI - Interactive travel assistant for Indonesia"
     )
     parser.add_argument(
         "--rag-config",
         type=str,
-        choices=["baseline", "crossencoder", "llm"],
-        default="baseline",
-        help="RAG configuration: baseline=No reranking, crossencoder=Cross-Encoder reranking, llm=LLM reranking (default: baseline)"
+        choices=list(RAG_CLI_KEY_TO_ID.keys()),
+        default=list(RAG_CLI_KEY_TO_ID.keys())[0],
+        help=help_text
     )
     
     args = parser.parse_args()

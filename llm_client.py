@@ -125,8 +125,7 @@ class LLMClient:
         self, 
         user_message: str, 
         system_prompt: Optional[str] = None,
-        auto_add_messages: bool = False,
-        temperature: float = 0.0
+        auto_add_messages: bool = False
     ) -> str:
         """
         Send a message and get a complete response using Responses API (non-streaming)
@@ -136,7 +135,6 @@ class LLMClient:
             user_message: The user's message
             system_prompt: Optional system prompt for instruction
             auto_add_messages: If True, automatically add messages to history (default: False for utility tasks)
-            temperature: Sampling temperature (default: 0.0 for deterministic output)
             
         Returns:
             The complete response text
@@ -149,8 +147,7 @@ class LLMClient:
         params = {
             "model": self.model,
             "input": user_message,
-            "stream": False,
-            "temperature": temperature
+            "stream": False
         }
         
         # Add system prompt as instruction if provided

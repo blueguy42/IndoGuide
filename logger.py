@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any
 import re
-from config import LOG_DIRECTORY
+from config import LOG_DIRECTORY, RAG_ID_TO_NAME
 
 
 class DialogueLogger:
@@ -17,20 +17,23 @@ class DialogueLogger:
         self.log_dir = log_dir
         os.makedirs(log_dir, exist_ok=True)
     
-    def create_session(self, session_id: str) -> Dict[str, Any]:
+    def create_session(self, session_id: str, rag_config: int = 1) -> Dict[str, Any]:
         """
         Create a new session log structure
         
         Args:
             session_id: Unique session identifier
+            rag_config: RAG configuration number (1=Baseline, 2=Cross-Encoder, 3=LLM)
             
         Returns:
             Session log dictionary
         """
         session_start_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        
         return {
             "session_id": session_id,
             "session_start_time": session_start_time,
+            "rag_config": RAG_ID_TO_NAME.get(rag_config, f"Unknown ({rag_config})"),
             "turns": []
         }
     

@@ -195,7 +195,7 @@ class RAGSystem:
             query_embeddings=[query_embedding],
             n_results=TOP_K_RETRIEVAL
         )
-        
+
         # Extract top-4 from metadata
         snippets = []
         for i in range(min(TOP_K_FINAL, len(results['metadatas'][0]))):
@@ -207,7 +207,7 @@ class RAGSystem:
                 "content": metadata["content"],
                 "source": metadata["source"]
             })
-        
+
         return snippets
     
     def _retrieve_with_cross_encoder(self, query: str) -> List[Dict[str, Any]]:
@@ -229,7 +229,7 @@ class RAGSystem:
             query_embeddings=[query_embedding],
             n_results=TOP_K_RETRIEVAL
         )
-        
+
         # Prepare candidates for reranking
         candidates = []
         for i in range(len(results['metadatas'][0])):
@@ -284,7 +284,7 @@ class RAGSystem:
             query_embeddings=[query_embedding],
             n_results=TOP_K_RETRIEVAL
         )
-        
+
         # Prepare candidates for reranking
         candidates = []
         for i in range(len(results['metadatas'][0])):
@@ -305,8 +305,7 @@ class RAGSystem:
         response_text = self.llm_client.chat(
             user_message=rerank_prompt,
             system_prompt=rerank_system_prompt,
-            auto_add_messages=False,  # Don't add to conversation history
-            temperature=0.0  # Deterministic output
+            auto_add_messages=False  # Don't add to conversation history
         )
         
         # Parse LLM response to get ranked IDs
