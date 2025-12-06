@@ -59,6 +59,9 @@ cover/
 logs/
 *.log
 
+# Vector Database
+chroma_db/
+
 # Django stuff:
 local_settings.py
 db.sqlite3

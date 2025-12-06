@@ -19,5 +19,28 @@
       "Get straight to the point while remaining helpful and accurate.",
       "Use bullet points when appropriate."
     ]
+  },
+  {
+    "name": "llm_reranker_system",
+    "description": "System prompt for LLM-based document reranking",
+    "prompt": [
+      "You are a relevance ranking assistant.",
+      "Your task is to rank document snippets by their relevance to a user query."
+    ]
+  },
+  {
+    "name": "llm_reranker_user",
+    "description": "User prompt template for LLM-based document reranking",
+    "prompt": [
+      "Query: {query}",
+      "",
+      "Rank the following document snippets by their relevance to the query.",
+      "Return ONLY a comma-separated list of document IDs in order from most to least relevant.",
+      "",
+      "Documents:",
+      "{documents}",
+      "",
+      "Ranked IDs (comma-separated, most relevant first):"
+    ]
   }
 ]

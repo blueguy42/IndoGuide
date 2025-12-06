@@ -22,7 +22,8 @@ from config import (
     CROSS_ENCODER_MODEL,
     LLM_RERANKER_MODEL,
     TOP_K_RETRIEVAL,
-    TOP_K_FINAL
+    TOP_K_FINAL,
+    get_prompt
 )
 
 
@@ -55,7 +56,7 @@ class RAGSystem:
         
         # Initialize LLM client for config 3
         if self.config == 3:
-            self.llm_client = LLMClient()
+            self.llm_client = LLMClient(model=LLM_RERANKER_MODEL)
     
     def _load_knowledge_base(self) -> List[Dict[str, Any]]:
         """Load knowledge base from JSON file"""
@@ -298,7 +299,7 @@ class RAGSystem:
         
         # Create prompt for LLM reranker
         rerank_prompt = self._create_llm_rerank_prompt(query, candidates)
-        rerank_system_prompt = "You are a relevance ranking assistant. Your task is to rank document snippets by their relevance to a user query."
+        rerank_system_prompt = get_prompt("llm_reranker_system")
         
         # Call LLM to rerank using Responses API
         response_text = self.llm_client.chat(
@@ -339,15 +340,14 @@ class RAGSystem:
         Returns:
             Formatted prompt string
         """
-        prompt = f"Query: {query}\n\n"
-        prompt += "Rank the following document snippets by their relevance to the query. "
-        prompt += "Return ONLY a comma-separated list of document IDs in order from most to least relevant.\n\n"
-        prompt += "Documents:\n"
-        
+        # Format documents for the prompt
+        documents_text = ""
         for cand in candidates:
-            prompt += f"ID {cand['id']}: {cand['topic']} - {cand['title']}: {cand['content'][:200]}...\n\n"
+            documents_text += f"ID {cand['id']}: {cand['topic']} - {cand['title']}: {cand['content'][:200]}...\n\n"
         
-        prompt += "\nRanked IDs (comma-separated, most relevant first):"
+        # Get prompt template and format it
+        prompt_template = get_prompt("llm_reranker_user")
+        prompt = prompt_template.format(query=query, documents=documents_text)
         
         return prompt
     
@@ -389,6 +389,6 @@ class RAGSystem:
             context += f"    Source: {snippet['source']}\n\n"
         
         context += "=== END OF CONTEXT ===\n\n"
-        context += "Use the above context to answer the user's question. Cite sources when relevant.\n"
+        context += "Use the above context to answer the user's question.\n"
         
         return context

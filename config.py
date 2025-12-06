@@ -44,7 +44,7 @@ def get_prompt(name: str = PROMPT_NAME):
         if prompt_obj["name"] == name:
             prompt = prompt_obj["prompt"]
             if isinstance(prompt, list):
-                return " ".join(prompt)
+                return "\n".join(prompt)
             return prompt
     
     # Fallback if specified prompt not found

@@ -4,7 +4,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT
+from config import SYSTEM_PROMPT, MODEL_NAME
 
 
 # Initialize logger
@@ -21,7 +21,7 @@ st.set_page_config(
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
     st.session_state.session_log = logger.create_session(st.session_state.session_id)
-    st.session_state.llm_client = LLMClient()
+    st.session_state.llm_client = LLMClient(model=MODEL_NAME)
     st.session_state.system_prompt = SYSTEM_PROMPT
     st.session_state.rag_config = 1  # Default to baseline
     st.session_state.rag_system = None  # Will be initialized based on config
@@ -219,15 +219,6 @@ if prompt := st.chat_input("Type your message here..."):
                 message_placeholder.markdown(full_response + "▌")
 
         message_placeholder.markdown(full_response)
-        
-        # Display retrieved snippets in expander for transparency
-        with st.expander("📚 Retrieved Context", expanded=False):
-            for i, snippet in enumerate(retrieved_snippets, 1):
-                st.markdown(f"**[{i}] {snippet['topic']} - {snippet['title']}**")
-                st.caption(snippet['content'])
-                st.caption(f"*Source: {snippet['source']}*")
-                if i < len(retrieved_snippets):
-                    st.divider()
     
     # Get bot timestamp (when streaming finished)
     bot_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")

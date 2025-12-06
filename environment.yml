@@ -1,4 +1,4 @@
-name: aiconvo
+name: IndoGuide
 channels:
   - defaults
 dependencies:

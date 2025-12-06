@@ -11,7 +11,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT
+from config import SYSTEM_PROMPT, MODEL_NAME
 
 
 class ChatCLI:
@@ -21,7 +21,7 @@ class ChatCLI:
         Args:
             rag_config: RAG configuration ('baseline', 'crossencoder', or 'llm')
         """
-        self.llm_client = LLMClient()
+        self.llm_client = LLMClient(model=MODEL_NAME)
         self.system_prompt = SYSTEM_PROMPT
         self.running = True
         self.rag_config_name = rag_config
