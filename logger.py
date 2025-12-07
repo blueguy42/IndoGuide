@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any
 import re
-from config import LOG_DIRECTORY, RAG_ID_TO_NAME
+from config import LOG_DIRECTORY, RAG_CONFIGS
 
 
 class DialogueLogger:
@@ -33,7 +33,7 @@ class DialogueLogger:
         return {
             "session_id": session_id,
             "session_start_time": session_start_time,
-            "rag_config": RAG_ID_TO_NAME.get(rag_config, f"Unknown ({rag_config})"),
+            "rag_config": RAG_CONFIGS.get(rag_config, {}).get("cli_key", f"unknown_{rag_config}"),
             "turns": []
         }
     

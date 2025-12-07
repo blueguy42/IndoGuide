@@ -11,6 +11,7 @@ LOG_DIRECTORY = "logs"
 # Prompt Configuration
 PROMPTS_FILE = "prompts.json"
 PROMPT_NAME = "indoguide"
+STARTER_MESSAGE = "Halo! I'm IndoGuide. I'd love to help plan your Indonesian adventure, from dream itineraries and visas to local culture. What's on your mind today?"
 
 # RAG Configuration
 KNOWLEDGE_BASE_FILE = "indonesia_knowledge_base.json"

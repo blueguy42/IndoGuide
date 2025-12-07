@@ -5,7 +5,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT, MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS
+from config import SYSTEM_PROMPT, MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS, STARTER_MESSAGE
 
 
 class ChatCLI:
@@ -16,6 +16,7 @@ class ChatCLI:
             rag_config: RAG configuration ('baseline', 'crossencoder', or 'llm')
         """
         self.llm_client = LLMClient(model=MODEL_NAME)
+        self.llm_client.add_assistant_message(STARTER_MESSAGE)
         self.system_prompt = SYSTEM_PROMPT
         self.running = True
         self.rag_config_name = rag_config
@@ -52,6 +53,9 @@ class ChatCLI:
         print("  /exit     - Exit the CLI")
         print("\nType your message and press Enter to chat.\n")
         print("="*60 + "\n")
+        
+        # Print starter message
+        self.print_message("assistant", STARTER_MESSAGE)
     
     def print_message(self, role: str, content: str):
         """
@@ -94,7 +98,9 @@ class ChatCLI:
         self.session_id = str(uuid.uuid4())
         self.session_log = self.logger.create_session(self.session_id, self.rag_config)
         self.llm_client.reset_conversation()
+        self.llm_client.add_assistant_message(STARTER_MESSAGE)
         print(f"\nConversation reset. New session ID: {self.session_id}\n")
+        self.print_message("assistant", STARTER_MESSAGE)
     
     def show_config(self):
         """Display current RAG configuration"""
@@ -168,6 +174,11 @@ class ChatCLI:
                 
                 # Inject context into system prompt
                 augmented_prompt = context + "\n" + self.system_prompt
+                
+                # If this is the first real turn (only starter message in history), inform the model
+                if len(self.llm_client.messages) == 1:
+                    print("\nInforming model about starter message...")
+                    augmented_prompt += f"\n\n[Context: You have just started the conversation with this greeting, so do not introduce yourself again: '{STARTER_MESSAGE}']"
                 
                 # Log user turn with retrieved snippets
                 self.logger.add_turn(

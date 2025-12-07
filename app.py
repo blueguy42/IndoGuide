@@ -4,7 +4,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT, MODEL_NAME, RAG_NAME_TO_ID
+from config import SYSTEM_PROMPT, MODEL_NAME, RAG_NAME_TO_ID, STARTER_MESSAGE
 
 
 # Initialize logger
@@ -28,6 +28,7 @@ if "session_id" not in st.session_state:
     st.session_state.session_log = None  # Will be created on first user input
     st.session_state.session_started = False  # Track if user has sent first message
     st.session_state.llm_client = LLMClient(model=MODEL_NAME)
+    st.session_state.llm_client.add_assistant_message(STARTER_MESSAGE)
     st.session_state.rag_system = None  # Will be initialized based on config
 
 
@@ -42,6 +43,7 @@ def restart_conversation():
     st.session_state.session_log = None  # Will be created on first user input
     st.session_state.session_started = False
     st.session_state.llm_client.reset_conversation()
+    st.session_state.llm_client.add_assistant_message(STARTER_MESSAGE)
 
 
 # Title and session info
@@ -129,6 +131,11 @@ if prompt := st.chat_input("Type your message here..."):
     
     # Inject context into system prompt
     augmented_prompt = context + "\n" + SYSTEM_PROMPT
+    
+    # If this is the first real turn (only starter message in history), inform the model
+    if len(st.session_state.llm_client.messages) == 1:
+        print("Informing model about starter message...")
+        augmented_prompt += f"\n\n[Context: You have just started the conversation with this greeting, so do not introduce yourself again: '{STARTER_MESSAGE}']"
     
     # Log user turn with retrieved snippets
     logger.add_turn(
