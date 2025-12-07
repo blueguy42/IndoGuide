@@ -61,8 +61,7 @@ class BatchReplay:
         results = {
             "metadata": {
                 "timestamp": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-                "rag_config": self.config_name,
-                "rag_config_key": self.rag_config_key,
+                "rag_config": self.rag_config_key,
                 "model": MODEL_NAME,
                 "input_file": self.input_file
             },

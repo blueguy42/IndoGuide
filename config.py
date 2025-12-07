@@ -11,7 +11,7 @@ LOG_DIR = "logs"
 # Prompt Configuration
 PROMPTS_FILE = "prompts.json"
 PROMPT_NAME = "indoguide"
-STARTER_MESSAGE = "Halo! I'm IndoGuide. I'd love to help plan your Indonesian adventure, from dream itineraries and visas to local culture. What's on your mind today?"
+STARTER_MESSAGE = "Hello! I'm IndoGuide. I'd love to help plan your Indonesian adventure, from dream itineraries and visas to local culture. What's on your mind today?"
 
 # Batch Replay Configuration
 TEST_DIALOGUES_FILE = "dialogues/test_dialogues.json"
@@ -20,7 +20,7 @@ LAAJ_RESULTS_DIR = "results/laaj"
 EVAL_RESULTS_DIR = "results/eval"
 
 # Evaluation Configuration
-LLM_JUDGE_MODEL = "gpt-5-mini-2025-08-07"
+LLM_JUDGE_MODEL = "gpt-4o-mini-2024-07-18"
 
 # RAG Configuration
 KNOWLEDGE_BASE_FILE = "indonesia_knowledge_base.json"

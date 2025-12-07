@@ -1,0 +1,1618 @@
+[
+  {
+    "dialog_id": 1,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Do I need to complete any digital forms before entering Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, all travelers must complete the All Indonesia Arrival Card online within 72 hours before arrival.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "How early should I submit that arrival card?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "You should submit the arrival card within 72 hours of your scheduled arrival in Indonesia.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 13, "topic": "Visa & Entry Rules", "title": "Visa Application Timeframes"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is the arrival card the same as the e-VOA?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, the arrival card is a mandatory digital declaration, while the e-VOA is an optional advance visa application.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 9, "topic": "Visa & Entry Rules", "title": "Using the Correct Visa for your Purpose"},
+          {"id": 10, "topic": "Visa & Entry Rules", "title": "Beware of Visa Scams"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do I need an onward ticket as well?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, immigration usually requires proof of an onward or return flight.",
+        "grounding_snippets": [
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 6, "topic": "Visa & Entry Rules", "title": "Consequences of Visa Overstay"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What happens if I overstay my visa accidentally?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Overstaying results in a daily fine and may lead to detention or deportation.",
+        "grounding_snippets": [
+          {"id": 6, "topic": "Visa & Entry Rules", "title": "Consequences of Visa Overstay"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 8, "topic": "Visa & Entry Rules", "title": "Applying for Long-Term Visas"},
+          {"id": 9, "topic": "Visa & Entry Rules", "title": "Using the Correct Visa for your Purpose"}
+        ]
+      }
+    ]
+  },
+
+  {
+    "dialog_id": 2,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Is my passport okay if it expires in four months when traveling to Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, Indonesia requires at least six months of passport validity beyond arrival.",
+        "grounding_snippets": [
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do they check for damage on the passport?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Indonesia can deny entry if the passport has tears, water damage, or other defects.",
+        "grounding_snippets": [
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I enter with a temporary passport?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Temporary or emergency passports may complicate entry; check with immigration in advance.",
+        "grounding_snippets": [
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 10, "topic": "Visa & Entry Rules", "title": "Beware of Visa Scams"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I carry a photocopy of my passport when exploring cities?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, carrying a copy is recommended for ID checks, especially in tourist areas.",
+        "grounding_snippets": [
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance and Medical Services"},
+          {"id": 110, "topic": "Safety Tips", "title": "Choosing Reputable Taxis and Ride-Share"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "If my passport gets replaced during my trip, can I still leave Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, but you must obtain an exit permit or special pass from immigration for the new passport.",
+        "grounding_snippets": [
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"}
+        ]
+      }
+    ]
+  },
+
+  
+  {
+    "dialog_id": 3,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What’s the best transport option to move between Indonesia’s major islands?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Domestic flights are the most convenient for long distances between major islands.",
+        "grounding_snippets": [
+          {"id": 15, "topic": "Transport Basics", "title": "Inter-Island Travel: Flights vs. Ferries"},
+          {"id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses and Shuttle Services"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allowing Extra Time for Travel"},
+          {"id": 19, "topic": "Transport Basics", "title": "Motorbike and Scooter Rental"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are ferries reliable for shorter crossings?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Ferries are common for short routes but can be unpredictable with delays.",
+        "grounding_snippets": [
+          {"id": 15, "topic": "Transport Basics", "title": "Inter-Island Travel: Flights vs. Ferries"},
+          {"id": 23, "topic": "Transport Basics", "title": "Booking Train and Ferry Tickets"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allowing Extra Time for Travel"},
+          {"id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses and Shuttle Services"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What’s the safest taxi option in Jakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Blue Bird taxis and verified Grab/Gojek ride-hailing drivers are safest.",
+        "grounding_snippets": [
+          {"id": 17, "topic": "Transport Basics", "title": "Ride-Hailing Apps and Taxis"},
+          {"id": 110, "topic": "Safety Tips", "title": "Choosing Reputable Taxis and Ride-Share"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"},
+          {"id": 111, "topic": "Safety Tips", "title": "ATM and Credit Card Fraud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I drive a rental car myself?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Driving can be challenging; many tourists hire a driver instead.",
+        "grounding_snippets": [
+          {"id": 20, "topic": "Transport Basics", "title": "Hiring a Private Driver"},
+          {"id": 24, "topic": "Transport Basics", "title": "Safety on Rental Vehicles"},
+          {"id": 25, "topic": "Transport Basics", "title": "Driving Caution at Night"},
+          {"id": 14, "topic": "Visa & Entry Rules", "title": "Carrying an International Driving Permit (IDP)"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do I need an international driving permit to rent scooters in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, an International Driving Permit is required to legally rent and drive a scooter.",
+        "grounding_snippets": [
+          {"id": 14, "topic": "Visa & Entry Rules", "title": "Carrying an International Driving Permit (IDP)"},
+          {"id": 19, "topic": "Transport Basics", "title": "Motorbike and Scooter Rental"},
+          {"id": 24, "topic": "Transport Basics", "title": "Safety on Rental Vehicles"},
+          {"id": 25, "topic": "Transport Basics", "title": "Driving Caution at Night"}
+        ]
+      }
+    ]
+  },
+
+  {
+    "dialog_id": 4,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What are the top attractions to visit in Yogyakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "The top attractions include Borobudur, Prambanan, and the Taman Sari Water Castle.",
+        "grounding_snippets": [
+          {"id": 28, "topic": "Destinations & Attractions", "title": "Borobudur Temple, Java"},
+          {"id": 33, "topic": "Destinations & Attractions", "title": "Prambanan Temple, Java"},
+          {"id": 47, "topic": "Destinations & Attractions", "title": "Taman Sari Water Castle, Yogyakarta"},
+          {"id": 84, "topic": "Destinations & Attractions", "title": "Prambanan Temple: Ramayana Ballet"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Borobudur good to visit at sunrise?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, sunrise is one of the most recommended ways to experience Borobudur.",
+        "grounding_snippets": [
+          {"id": 66, "topic": "Destinations & Attractions", "title": "Borobudur: Sunrise Experience"},
+          {"id": 28, "topic": "Destinations & Attractions", "title": "Borobudur Temple, Java"},
+          {"id": 99, "topic": "Destinations & Attractions", "title": "Borobudur: Stupas and Buddha Statues"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo, Java"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What about Prambanan? Anything special there?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Prambanan is famous for its Hindu temples and the iconic Ramayana Ballet performance.",
+        "grounding_snippets": [
+          {"id": 33, "topic": "Destinations & Attractions", "title": "Prambanan Temple, Java"},
+          {"id": 84, "topic": "Destinations & Attractions", "title": "Prambanan Temple: Ramayana Ballet"},
+          {"id": 100, "topic": "Destinations & Attractions", "title": "Prambanan Temple: Candi Shiva Mahadeva"},
+          {"id": 28, "topic": "Destinations & Attractions", "title": "Borobudur Temple, Java"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Taman Sari worth a visit?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, it's an iconic royal garden with pools, tunnels, and an underground mosque.",
+        "grounding_snippets": [
+          {"id": 47, "topic": "Destinations & Attractions", "title": "Taman Sari Water Castle, Yogyakarta"},
+          {"id": 98, "topic": "Destinations & Attractions", "title": "Taman Sari: Underground Mosque"},
+          {"id": 28, "topic": "Destinations & Attractions", "title": "Borobudur Temple, Java"},
+          {"id": 33, "topic": "Destinations & Attractions", "title": "Prambanan Temple, Java"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Anything else culturally important in Yogyakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, the city is rich with Javanese heritage and traditional performances.",
+        "grounding_snippets": [
+          {"id": 84, "topic": "Destinations & Attractions", "title": "Prambanan Temple: Ramayana Ballet"},
+          {"id": 47, "topic": "Destinations & Attractions", "title": "Taman Sari Water Castle, Yogyakarta"},
+          {"id": 33, "topic": "Destinations & Attractions", "title": "Prambanan Temple, Java"},
+          {"id": 28, "topic": "Destinations & Attractions", "title": "Borobudur Temple, Java"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 5,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Is Bali safe for tourists?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Bali is generally safe, but be cautious of petty crime and drink spiking.",
+        "grounding_snippets": [
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Spiking and Methanol Poisoning"},
+          {"id": 110, "topic": "Safety Tips", "title": "Choosing Reputable Taxis and Ride-Share"},
+          {"id": 113, "topic": "Safety Tips", "title": "Water Safety and Food Precautions"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is it safe to drink tap water?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, always drink bottled or filtered water in Indonesia.",
+        "grounding_snippets": [
+          {"id": 113, "topic": "Safety Tips", "title": "Water Safety and Food Precautions"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance and Medical Services"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Spiking and Methanol Poisoning"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What should I watch out for at bars?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Never leave your drink unattended and avoid illegal alcohol that may contain methanol.",
+        "grounding_snippets": [
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Spiking and Methanol Poisoning"},
+          {"id": 113, "topic": "Safety Tips", "title": "Water Safety and Food Precautions"},
+          {"id": 117, "topic": "Safety Tips", "title": "Sexual Assault Awareness"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is renting a scooter risky?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Scooter rental is common but requires caution, a helmet, and a valid IDP.",
+        "grounding_snippets": [
+          {"id": 19, "topic": "Transport Basics", "title": "Motorbike and Scooter Rental"},
+          {"id": 24, "topic": "Transport Basics", "title": "Safety on Rental Vehicles"},
+          {"id": 25, "topic": "Transport Basics", "title": "Driving Caution at Night"},
+          {"id": 14, "topic": "Visa & Entry Rules", "title": "Carrying an International Driving Permit (IDP)"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is medical care good in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Major areas have good clinics, but insurance is strongly recommended.",
+        "grounding_snippets": [
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance and Medical Services"},
+          {"id": 113, "topic": "Safety Tips", "title": "Water Safety and Food Precautions"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Spiking and Methanol Poisoning"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 6,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What cultural etiquette should I follow in Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Use your right hand for giving or receiving items, and dress modestly at religious sites.",
+        "grounding_snippets": [
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Respecting the Left Hand"},
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress at Religious Sites"},
+          {"id": 120, "topic": "Culture & Etiquette", "title": "Public Displays of Affection (PDA)"},
+          {"id": 117, "topic": "Safety Tips", "title": "Sexual Assault Awareness"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I show affection in public with my partner?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Keep public displays of affection minimal; Indonesian culture tends to be conservative.",
+        "grounding_snippets": [
+          {"id": 120, "topic": "Culture & Etiquette", "title": "Public Displays of Affection (PDA)"},
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress at Religious Sites"},
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Respecting the Left Hand"},
+          {"id": 117, "topic": "Safety Tips", "title": "Sexual Assault Awareness"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do I need to wear anything special at temples?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, cover shoulders and knees; sarongs are often required at Balinese temples.",
+        "grounding_snippets": [
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress at Religious Sites"},
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Respecting the Left Hand"},
+          {"id": 92, "topic": "Destinations & Attractions", "title": "Pura Besakih: Safety and Guides"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud, Bali: Cultural and Spiritual Heart"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is pointing with my finger okay?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Pointing directly at someone is considered rude; use your whole hand instead.",
+        "grounding_snippets": [
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Respecting the Left Hand"},
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress at Religious Sites"},
+          {"id": 120, "topic": "Culture & Etiquette", "title": "Public Displays of Affection (PDA)"},
+          {"id": 92, "topic": "Destinations & Attractions", "title": "Pura Besakih: Safety and Guides"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Anything else to avoid offending locals?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Be polite, speak softly, dress modestly, and avoid using your left hand.",
+        "grounding_snippets": [
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Respecting the Left Hand"},
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress at Religious Sites"},
+          {"id": 120, "topic": "Culture & Etiquette", "title": "Public Displays of Affection (PDA)"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud, Bali: Cultural and Spiritual Heart"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 7,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What’s the best diving spot in Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Raja Ampat and Wakatobi are among the top diving destinations in the world.",
+        "grounding_snippets": [
+          {"id": 32, "topic": "Destinations & Attractions", "title": "Raja Ampat, West Papua: Underwater Paradise"},
+          {"id": 59, "topic": "Destinations & Attractions", "title": "Wakatobi National Park, Sulawesi"},
+          {"id": 49, "topic": "Destinations & Attractions", "title": "Bunaken National Park, Sulawesi"},
+          {"id": 115, "topic": "Safety Tips", "title": "Diving Safety"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Bunaken also good for beginners?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, there are sites suitable for both beginners and experienced divers.",
+        "grounding_snippets": [
+          {"id": 49, "topic": "Destinations & Attractions", "title": "Bunaken National Park, Sulawesi: Diving"},
+          {"id": 32, "topic": "Destinations & Attractions", "title": "Raja Ampat, West Papua: Underwater Paradise"},
+          {"id": 59, "topic": "Destinations & Attractions", "title": "Wakatobi National Park, Sulawesi"},
+          {"id": 115, "topic": "Safety Tips", "title": "Diving Safety"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Where can I see manta rays?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Komodo National Park is one of the best places to see manta rays.",
+        "grounding_snippets": [
+          {"id": 102, "topic": "Destinations & Attractions", "title": "Komodo National Park: Manta Rays"},
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park, Flores"},
+          {"id": 32, "topic": "Destinations & Attractions", "title": "Raja Ampat, West Papua"},
+          {"id": 59, "topic": "Destinations & Attractions", "title": "Wakatobi National Park, Sulawesi"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is diving safe in Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Use reputable operators and ensure insurance covers hyperbaric treatment.",
+        "grounding_snippets": [
+          {"id": 115, "topic": "Safety Tips", "title": "Diving Safety"},
+          {"id": 49, "topic": "Destinations & Attractions", "title": "Bunaken National Park"},
+          {"id": 32, "topic": "Destinations & Attractions", "title": "Raja Ampat"},
+          {"id": 59, "topic": "Destinations & Attractions", "title": "Wakatobi"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are whale sharks visible anywhere?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Cenderawasih Bay National Park is known for reliable whale shark sightings.",
+        "grounding_snippets": [
+          {"id": 96, "topic": "Destinations & Attractions", "title": "Cenderawasih Bay National Park"},
+          {"id": 32, "topic": "Destinations & Attractions", "title": "Raja Ampat"},
+          {"id": 59, "topic": "Destinations & Attractions", "title": "Wakatobi"},
+          {"id": 115, "topic": "Safety Tips", "title": "Diving Safety"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 8,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Is Mount Bromo easy to hike?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Bromo is relatively easy; most visitors go by jeep and hike the last stretch.",
+        "grounding_snippets": [
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo, Java"},
+          {"id": 101, "topic": "Destinations & Attractions", "title": "Mount Bromo: Sea of Sand"},
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic and Natural Disaster Preparedness"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allowing Extra Time for Travel"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "When is the best time to visit for sunrise?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Dry season usually offers the clearest sunrise views at Bromo.",
+        "grounding_snippets": [
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 66, "topic": "Destinations & Attractions", "title": "Borobudur: Sunrise Experience"},
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allow Extra Time"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is the Sea of Sand accessible?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, jeeps or horses typically cross the Sea of Sand before the crater hike.",
+        "grounding_snippets": [
+          {"id": 101, "topic": "Destinations & Attractions", "title": "Mount Bromo: Sea of Sand"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allow Extra Time"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is it dangerous to be near active volcanoes?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Stay updated on alerts and respect exclusion zones around volcanoes.",
+        "grounding_snippets": [
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic and Natural Disaster Preparedness"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 50, "topic": "Destinations & Attractions", "title": "Ijen Crater"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allow Extra Time"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Ijen worth adding to my itinerary?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Ijen is famous for its blue fire and turquoise crater lake.",
+        "grounding_snippets": [
+          {"id": 50, "topic": "Destinations & Attractions", "title": "Ijen Crater: Blue Fire"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu National Park"},
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 9,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Where should I go for beaches near Lombok?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "The Gili Islands—Trawangan, Air, and Meno—are top beach destinations near Lombok.",
+        "grounding_snippets": [
+          {"id": 35, "topic": "Destinations & Attractions", "title": "The Gili Islands"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"},
+          {"id": 74, "topic": "Destinations & Attractions", "title": "Gili Air"},
+          {"id": 75, "topic": "Destinations & Attractions", "title": "Gili Meno"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Which Gili Island is quietest?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Gili Meno is the quietest and most peaceful of the three.",
+        "grounding_snippets": [
+          {"id": 75, "topic": "Destinations & Attractions", "title": "Gili Meno"},
+          {"id": 74, "topic": "Destinations & Attractions", "title": "Gili Air"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"},
+          {"id": 35, "topic": "Destinations & Attractions", "title": "The Gili Islands"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is there nightlife on Gili T?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Gili Trawangan is known for its lively nightlife scene.",
+        "grounding_snippets": [
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"},
+          {"id": 35, "topic": "Destinations & Attractions", "title": "The Gili Islands"},
+          {"id": 74, "topic": "Destinations & Attractions", "title": "Gili Air"},
+          {"id": 75, "topic": "Destinations & Attractions", "title": "Gili Meno"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are there no cars on the Gili Islands?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Correct, the islands ban motorized vehicles entirely.",
+        "grounding_snippets": [
+          {"id": 93, "topic": "Destinations & Attractions", "title": "Gili Trawangan: No Motorized Transport"},
+          {"id": 35, "topic": "Destinations & Attractions", "title": "The Gili Islands"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"},
+          {"id": 74, "topic": "Destinations & Attractions", "title": "Gili Air"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Where to eat on Gili Air?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Gili Air has many beachfront cafés with great sunset views.",
+        "grounding_snippets": [
+          {"id": 106, "topic": "Destinations & Attractions", "title": "Gili Air: Beachfront Cafes"},
+          {"id": 74, "topic": "Destinations & Attractions", "title": "Gili Air"},
+          {"id": 35, "topic": "Destinations & Attractions", "title": "The Gili Islands"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 10,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What's the best cultural attraction in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Ubud is Bali’s cultural heart, known for temples, rice terraces, and art museums.",
+        "grounding_snippets": [
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud, Bali"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang Rice Terraces"},
+          {"id": 72, "topic": "Destinations & Attractions", "title": "Ubud Art Museums"},
+          {"id": 91, "topic": "Destinations & Attractions", "title": "Ubud: Yoga and Wellness"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Where can I see monkeys in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "The Sacred Monkey Forest Sanctuary in Ubud is the best-known spot.",
+        "grounding_snippets": [
+          {"id": 67, "topic": "Destinations & Attractions", "title": "Sacred Monkey Forest Sanctuary"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"},
+          {"id": 104, "topic": "Destinations & Attractions", "title": "Uluwatu Temple: Macaque Monkeys"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang Rice Terraces"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Uluwatu Temple worth visiting?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, it offers dramatic cliffs, sunset views, and a Kecak dance performance.",
+        "grounding_snippets": [
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu Temple"},
+          {"id": 104, "topic": "Destinations & Attractions", "title": "Uluwatu Temple: Macaque Monkeys"},
+          {"id": 36, "topic": "Destinations & Attractions", "title": "Tanah Lot Temple"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are the monkeys aggressive?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "They may grab belongings, so keep items secure.",
+        "grounding_snippets": [
+          {"id": 104, "topic": "Destinations & Attractions", "title": "Uluwatu Temple: Macaque Monkeys"},
+          {"id": 67, "topic": "Destinations & Attractions", "title": "Sacred Monkey Forest Sanctuary"},
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu Temple"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Where are Bali’s best rice terraces?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Tegallalang and the UNESCO-listed Jatiluwih terraces are the most famous.",
+        "grounding_snippets": [
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang Rice Terraces"},
+          {"id": 51, "topic": "Destinations & Attractions", "title": "Jatiluwih Rice Terraces"},
+          {"id": 90, "topic": "Destinations & Attractions", "title": "Jatiluwih Rice Terraces: Subak System"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 11,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "How can I travel around Java efficiently?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Trains are often more reliable and comfortable than buses for long distances.",
+        "grounding_snippets": [
+          {"id": 16, "topic": "Transport Basics", "title": "Train Travel in Java"},
+          {"id": 27, "topic": "Transport Basics", "title": "Travel Classes on Indonesian Trains"},
+          {"id": 23, "topic": "Transport Basics", "title": "Booking Train and Ferry Tickets"},
+          {"id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses and Shuttle Services"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I book train tickets online?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, you can book via the official railway website or popular Indonesian travel apps.",
+        "grounding_snippets": [
+          {"id": 23, "topic": "Transport Basics", "title": "Booking Train and Ferry Tickets"},
+          {"id": 16, "topic": "Transport Basics", "title": "Train Travel in Java"},
+          {"id": 27, "topic": "Transport Basics", "title": "Train Service Classes"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allowing Extra Time"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are buses safe for long distances?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Buses are budget-friendly but can be slow and crowded; VIP options are more comfortable.",
+        "grounding_snippets": [
+          {"id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses"},
+          {"id": 16, "topic": "Transport Basics", "title": "Train Travel in Java"},
+          {"id": 26, "topic": "Transport Basics", "title": "Allow Extra Time"},
+          {"id": 20, "topic": "Transport Basics", "title": "Hiring a Private Driver"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I hire a driver?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Hiring a driver is common and removes the stress of navigating heavy traffic.",
+        "grounding_snippets": [
+          {"id": 20, "topic": "Transport Basics", "title": "Hiring a Private Driver"},
+          {"id": 24, "topic": "Transport Basics", "title": "Rental Vehicle Safety"},
+          {"id": 17, "topic": "Transport Basics", "title": "Ride-Hailing Apps and Taxis"},
+          {"id": 25, "topic": "Transport Basics", "title": "Driving Caution at Night"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are there traditional transports in Java?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes—becak (rickshaws) and ojek (motorcycle taxis) are common.",
+        "grounding_snippets": [
+          {"id": 21, "topic": "Transport Basics", "title": "Traditional Transport: Becak and Ojek"},
+          {"id": 18, "topic": "Transport Basics", "title": "Angkots"},
+          {"id": 17, "topic": "Transport Basics", "title": "Ride-Hailing Apps"},
+          {"id": 22, "topic": "Transport Basics", "title": "Long-Distance Buses"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 12,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What’s the best natural attraction on Flores?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Kelimutu National Park, with its three color-changing lakes, is a must-visit.",
+        "grounding_snippets": [
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu National Park"},
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park"},
+          {"id": 76, "topic": "Destinations & Attractions", "title": "Flores Island"},
+          {"id": 85, "topic": "Destinations & Attractions", "title": "Komodo Dragons on Rinca"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Komodo Island nearby?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Komodo National Park is accessible from Labuan Bajo in western Flores.",
+        "grounding_snippets": [
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park"},
+          {"id": 85, "topic": "Destinations & Attractions", "title": "Komodo Dragons on Rinca"},
+          {"id": 102, "topic": "Destinations & Attractions", "title": "Manta Rays at Komodo"},
+          {"id": 76, "topic": "Destinations & Attractions", "title": "Flores Island"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are the Komodo dragons dangerous?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, you must always visit with a ranger who ensures safety around the dragons.",
+        "grounding_snippets": [
+          {"id": 85, "topic": "Destinations & Attractions", "title": "Komodo Dragons on Rinca"},
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park"},
+          {"id": 102, "topic": "Destinations & Attractions", "title": "Manta Rays"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What else can I do on Flores?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Explore traditional villages like Wae Rebo and enjoy mountain landscapes.",
+        "grounding_snippets": [
+          {"id": 76, "topic": "Destinations & Attractions", "title": "Flores Island"},
+          {"id": 80, "topic": "Destinations & Attractions", "title": "Wae Rebo Village"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"},
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Padar Island worth a visit?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Padar Island is famous for its stunning viewpoint over three colored bays.",
+        "grounding_snippets": [
+          {"id": 56, "topic": "Destinations & Attractions", "title": "Padar Island"},
+          {"id": 30, "topic": "Destinations & Attractions", "title": "Komodo National Park"},
+          {"id": 76, "topic": "Destinations & Attractions", "title": "Flores Island"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 13,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What's the most scenic lake in Sumatra?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Lake Toba is the largest volcanic lake in the world and very scenic.",
+        "grounding_snippets": [
+          {"id": 34, "topic": "Destinations & Attractions", "title": "Lake Toba"},
+          {"id": 89, "topic": "Destinations & Attractions", "title": "Lake Toba: Sipiso-Piso Viewpoint"},
+          {"id": 61, "topic": "Destinations & Attractions", "title": "Samosir Island"},
+          {"id": 48, "topic": "Destinations & Attractions", "title": "Sipiso-Piso Waterfall"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What can I do on Samosir Island?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "You can explore Batak culture, traditional villages, and peaceful lakeside views.",
+        "grounding_snippets": [
+          {"id": 61, "topic": "Destinations & Attractions", "title": "Samosir Island"},
+          {"id": 34, "topic": "Destinations & Attractions", "title": "Lake Toba"},
+          {"id": 89, "topic": "Destinations & Attractions", "title": "Lake Toba: Sipiso-Piso Viewpoint"},
+          {"id": 48, "topic": "Destinations & Attractions", "title": "Sipiso-Piso Waterfall"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Sipiso-Piso Waterfall easy to reach?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, there's a viewpoint and a long trail down to the base for adventurous visitors.",
+        "grounding_snippets": [
+          {"id": 48, "topic": "Destinations & Attractions", "title": "Sipiso-Piso Waterfall"},
+          {"id": 89, "topic": "Destinations & Attractions", "title": "Lake Toba: Sipiso-Piso Viewpoint"},
+          {"id": 34, "topic": "Destinations & Attractions", "title": "Lake Toba"},
+          {"id": 61, "topic": "Destinations & Attractions", "title": "Samosir Island"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Any other lakes in Sumatra worth visiting?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Lake Maninjau is another beautiful caldera lake with scenic roads.",
+        "grounding_snippets": [
+          {"id": 81, "topic": "Destinations & Attractions", "title": "Lake Maninjau"},
+          {"id": 34, "topic": "Destinations & Attractions", "title": "Lake Toba"},
+          {"id": 48, "topic": "Destinations & Attractions", "title": "Sipiso-Piso"},
+          {"id": 61, "topic": "Destinations & Attractions", "title": "Samosir"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Lake Toba good for swimming?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, swimming is common in many calm areas around Samosir Island.",
+        "grounding_snippets": [
+          {"id": 34, "topic": "Destinations & Attractions", "title": "Lake Toba"},
+          {"id": 61, "topic": "Destinations & Attractions", "title": "Samosir Island"},
+          {"id": 89, "topic": "Destinations & Attractions", "title": "Lake Toba Viewpoint"},
+          {"id": 48, "topic": "Destinations & Attractions", "title": "Sipiso-Piso"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 14,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What amusement park can I visit in Jakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Taman Impian Jaya Ancol offers a theme park, oceanarium, beaches, and more.",
+        "grounding_snippets": [
+          {"id": 64, "topic": "Destinations & Attractions", "title": "Taman Impian Jaya Ancol"},
+          {"id": 103, "topic": "Destinations & Attractions", "title": "Taman Mini: Cable Car"},
+          {"id": 57, "topic": "Destinations & Attractions", "title": "Taman Mini Indonesia Indah"},
+          {"id": 105, "topic": "Destinations & Attractions", "title": "Kelapa Gading: Culinary Destination"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is there a good cultural park in Jakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Taman Mini Indonesia Indah showcases traditional houses from all provinces.",
+        "grounding_snippets": [
+          {"id": 57, "topic": "Destinations & Attractions", "title": "Taman Mini Indonesia Indah"},
+          {"id": 103, "topic": "Destinations & Attractions", "title": "Taman Mini: Cable Car"},
+          {"id": 64, "topic": "Destinations & Attractions", "title": "Taman Impian Jaya Ancol"},
+          {"id": 105, "topic": "Destinations & Attractions", "title": "Kelapa Gading"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What about food areas?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Kelapa Gading is a major culinary hotspot with diverse food options.",
+        "grounding_snippets": [
+          {"id": 105, "topic": "Destinations & Attractions", "title": "Kelapa Gading"},
+          {"id": 64, "topic": "Destinations & Attractions", "title": "Taman Impian Jaya Ancol"},
+          {"id": 57, "topic": "Destinations & Attractions", "title": "Taman Mini"},
+          {"id": 103, "topic": "Destinations & Attractions", "title": "Cable Car"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is the cable car at Taman Mini good?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, the cable car gives a panoramic view of the miniature archipelago.",
+        "grounding_snippets": [
+          {"id": 103, "topic": "Destinations & Attractions", "title": "Taman Mini: Cable Car"},
+          {"id": 57, "topic": "Destinations & Attractions", "title": "Taman Mini"},
+          {"id": 64, "topic": "Destinations & Attractions", "title": "Ancol"},
+          {"id": 105, "topic": "Destinations & Attractions", "title": "Kelapa Gading"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Any botanical gardens near Jakarta?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, the Bogor Botanical Gardens are a beautiful, historic green space south of the city.",
+        "grounding_snippets": [
+          {"id": 79, "topic": "Destinations & Attractions", "title": "Bogor Botanical Gardens"},
+          {"id": 57, "topic": "Destinations & Attractions", "title": "Taman Mini"},
+          {"id": 103, "topic": "Destinations & Attractions", "title": "Cable Car"},
+          {"id": 64, "topic": "Destinations & Attractions", "title": "Ancol"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 15,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Where can I surf in Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "The Mentawai Islands and Bali beaches like Kuta are popular surfing spots.",
+        "grounding_snippets": [
+          {"id": 60, "topic": "Destinations & Attractions", "title": "Mentawai Islands: Surfing"},
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 94, "topic": "Destinations & Attractions", "title": "Canggu"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Kuta Beach good for beginners?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, its gentle waves make it ideal for beginner surfers.",
+        "grounding_snippets": [
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 94, "topic": "Destinations & Attractions", "title": "Canggu"},
+          {"id": 60, "topic": "Destinations & Attractions", "title": "Mentawai"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Canggu good for surfing too?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Canggu is known for excellent surf breaks and a laid-back vibe.",
+        "grounding_snippets": [
+          {"id": 94, "topic": "Destinations & Attractions", "title": "Canggu"},
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 60, "topic": "Destinations & Attractions", "title": "Mentawai"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Mentawai difficult to reach?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, many surf spots require liveaboard boats, but waves are world-class.",
+        "grounding_snippets": [
+          {"id": 60, "topic": "Destinations & Attractions", "title": "Mentawai Islands"},
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 94, "topic": "Destinations & Attractions", "title": "Canggu"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Any quieter surf beaches in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Canggu and areas north of Kuta tend to be quieter.",
+        "grounding_snippets": [
+          {"id": 94, "topic": "Destinations & Attractions", "title": "Canggu"},
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 60, "topic": "Destinations & Attractions", "title": "Mentawai"},
+          {"id": 73, "topic": "Destinations & Attractions", "title": "Gili Trawangan"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 16,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Which temples in Bali should I visit?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Top temples include Uluwatu, Tanah Lot, and Besakih.",
+        "grounding_snippets": [
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu Temple"},
+          {"id": 36, "topic": "Destinations & Attractions", "title": "Tanah Lot"},
+          {"id": 53, "topic": "Destinations & Attractions", "title": "Besakih Temple"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun Temple"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Tanah Lot accessible all day?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Access depends on tide; you can only walk across during low tide.",
+        "grounding_snippets": [
+          {"id": 83, "topic": "Destinations & Attractions", "title": "Tanah Lot: Tide Access"},
+          {"id": 36, "topic": "Destinations & Attractions", "title": "Tanah Lot Temple"},
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu Temple"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun Temple"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Uluwatu Temple crowded at sunset?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, sunset is the busiest time due to the cliff views and the Kecak dance.",
+        "grounding_snippets": [
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu Temple"},
+          {"id": 104, "topic": "Destinations & Attractions", "title": "Uluwatu Monkeys"},
+          {"id": 36, "topic": "Destinations & Attractions", "title": "Tanah Lot"},
+          {"id": 53, "topic": "Destinations & Attractions", "title": "Besakih"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What should I wear at Besakih?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "A sarong and sash are required, and modest clothing is expected.",
+        "grounding_snippets": [
+          {"id": 92, "topic": "Destinations & Attractions", "title": "Pura Besakih: Safety and Guides"},
+          {"id": 119, "topic": "Culture & Etiquette", "title": "Modest Dress"},
+          {"id": 118, "topic": "Culture & Etiquette", "title": "Left Hand Etiquette"},
+          {"id": 53, "topic": "Destinations & Attractions", "title": "Besakih Temple"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Which temple has beautiful gardens?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Taman Ayun Temple is known for its landscaped gardens and serene moat.",
+        "grounding_snippets": [
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun Temple"},
+          {"id": 36, "topic": "Destinations & Attractions", "title": "Tanah Lot"},
+          {"id": 40, "topic": "Destinations & Attractions", "title": "Uluwatu"},
+          {"id": 53, "topic": "Destinations & Attractions", "title": "Besakih"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 17,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What are some popular water palaces in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Tirta Gangga and Tirtagangga are beautiful royal water gardens worth visiting.",
+        "grounding_snippets": [
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga Water Palace"},
+          {"id": 63, "topic": "Destinations & Attractions", "title": "Tirtagangga"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I swim there?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, some pools at Tirta Gangga are open for swimming.",
+        "grounding_snippets": [
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 63, "topic": "Destinations & Attractions", "title": "Tirtagangga"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is it crowded?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "It can get busy during midday; mornings are more peaceful.",
+        "grounding_snippets": [
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 63, "topic": "Destinations & Attractions", "title": "Tirtagangga"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is it close to Ubud?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, it’s located in East Bali, about 1.5–2 hours from Ubud.",
+        "grounding_snippets": [
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"},
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 63, "topic": "Destinations & Attractions", "title": "Tirtagangga"},
+          {"id": 88, "topic": "Destinations & Attractions", "title": "Taman Ayun"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Does it have good photo spots?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, the stepping stones and fountains are very photogenic.",
+        "grounding_snippets": [
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 63, "topic": "Destinations & Attractions", "title": "Tirtagangga"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 18,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What should I know about Indonesian street food?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Choose vendors that cook food fresh and avoid unsafe ice or tap water.",
+        "grounding_snippets": [
+          {"id": 113, "topic": "Safety Tips", "title": "Water and Food Precautions"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Spiking"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is it safe to try fruit juices?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Ensure the ice is made from purified water or ask for no ice.",
+        "grounding_snippets": [
+          {"id": 113, "topic": "Safety Tips", "title": "Food Precautions"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Safety"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I eat from street stalls at night?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, but choose busy stalls with high turnover and fresh cooking.",
+        "grounding_snippets": [
+          {"id": 113, "topic": "Safety Tips", "title": "Food Safety"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"},
+          {"id": 110, "topic": "Safety Tips", "title": "Taxi Safety"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I carry my passport while eating out?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Carry a copy instead of the original to reduce risk.",
+        "grounding_snippets": [
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"},
+          {"id": 111, "topic": "Safety Tips", "title": "ATM Fraud"},
+          {"id": 110, "topic": "Safety Tips", "title": "Taxi Safety"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is bottled water widely available?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, bottled water is sold everywhere and recommended over tap water.",
+        "grounding_snippets": [
+          {"id": 113, "topic": "Safety Tips", "title": "Food & Water Safety"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"},
+          {"id": 109, "topic": "Safety Tips", "title": "Drink Safety"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 19,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Is Indonesia prone to natural disasters?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, earthquakes, tsunamis, and volcanic eruptions can occur.",
+        "grounding_snippets": [
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic and Disaster Preparedness"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 50, "topic": "Destinations & Attractions", "title": "Ijen Crater"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "How can I stay prepared?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Monitor local alerts, respect exclusion zones, and keep important documents secure.",
+        "grounding_snippets": [
+          {"id": 114, "topic": "Safety Tips", "title": "Disaster Preparedness"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime"},
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Are volcanic hikes safe?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "They're safe when open to visitors; always check activity updates first.",
+        "grounding_snippets": [
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 50, "topic": "Destinations & Attractions", "title": "Ijen Blue Fire"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I avoid certain areas?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Avoid exclusion zones around active volcanoes and follow government advisories.",
+        "grounding_snippets": [
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"},
+          {"id": 29, "topic": "Destinations & Attractions", "title": "Mount Bromo"},
+          {"id": 50, "topic": "Destinations & Attractions", "title": "Ijen"},
+          {"id": 41, "topic": "Destinations & Attractions", "title": "Kelimutu"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do I need travel insurance because of this?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, comprehensive insurance is highly recommended due to disaster risks.",
+        "grounding_snippets": [
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance"},
+          {"id": 114, "topic": "Safety Tips", "title": "Volcanic Preparedness"},
+          {"id": 113, "topic": "Safety Tips", "title": "Food Safety"},
+          {"id": 115, "topic": "Safety Tips", "title": "Diving Safety"}
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "dialog_id": 20,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "What are some family-friendly attractions in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Taman Safari Bali, water gardens, and cultural sites in Ubud are great options.",
+        "grounding_snippets": [
+          {"id": 65, "topic": "Destinations & Attractions", "title": "Taman Safari Bali"},
+          {"id": 78, "topic": "Destinations & Attractions", "title": "Amazing Taman Safari"},
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is Taman Safari worth it?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, it offers close-up wildlife experiences and cultural shows.",
+        "grounding_snippets": [
+          {"id": 65, "topic": "Destinations & Attractions", "title": "Taman Safari Bali"},
+          {"id": 78, "topic": "Destinations & Attractions", "title": "Amazing Taman Safari"},
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Where can kids enjoy nature in Bali?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Ubud’s rice terraces and monkey forest are popular with families.",
+        "grounding_snippets": [
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang Rice Terraces"},
+          {"id": 67, "topic": "Destinations & Attractions", "title": "Monkey Forest"},
+          {"id": 46, "topic": "Destinations & Attractions", "title": "Tirta Gangga"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is the Monkey Forest safe for kids?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, but children should keep their belongings secure and avoid feeding monkeys.",
+        "grounding_snippets": [
+          {"id": 67, "topic": "Destinations & Attractions", "title": "Monkey Forest"},
+          {"id": 104, "topic": "Destinations & Attractions", "title": "Uluwatu Monkeys"},
+          {"id": 31, "topic": "Destinations & Attractions", "title": "Ubud"},
+          {"id": 68, "topic": "Destinations & Attractions", "title": "Tegallalang"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Any calm beaches for families?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Nusa Dua is ideal for families with calm waters and resort facilities.",
+        "grounding_snippets": [
+          {"id": 71, "topic": "Destinations & Attractions", "title": "Nusa Dua"},
+          {"id": 45, "topic": "Destinations & Attractions", "title": "Kuta Beach"},
+          {"id": 55, "topic": "Destinations & Attractions", "title": "Seminyak"},
+          {"id": 35, "topic": "Destinations & Attractions", "title": "Gili Islands"}
+        ]
+      }
+    ]
+  }
+]
