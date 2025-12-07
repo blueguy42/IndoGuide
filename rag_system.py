@@ -1,11 +1,3 @@
-"""
-RAG System for IndoGuide
-Implements three retrieval configurations:
-1. Baseline Retrieval-Only
-2. Retrieval + Cross-Encoder ReRanker
-3. Retrieval + LLM-as-ReRanker
-"""
-
 import json
 import os
 from typing import List, Dict, Any

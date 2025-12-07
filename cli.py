@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-CLI interface for IndoGuide
-Provides an interactive command-line chat experience with the LLM
-"""
-
 import sys
 import argparse
 import uuid

@@ -17,6 +17,10 @@ st.set_page_config(
     layout="centered"
 )
 
+# Load custom CSS
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 # Initialize session state
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
@@ -47,69 +51,6 @@ col1, col2 = st.columns([3, 1])
 with col1:
     st.markdown(
         """
-        <style>
-        .info-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .info-button-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-        .info-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: #f0f2f6;
-            color: #31333F;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: help;
-            border: 1px solid #d0d0d0;
-            transition: all 0.2s;
-        }
-        .info-button:hover {
-            background-color: #e0e2e6;
-            border-color: #a0a0a0;
-        }
-        .tooltip-text {
-            visibility: hidden;
-            width: 400px;
-            background-color: #262730;
-            color: #fff;
-            text-align: left;
-            border-radius: 8px;
-            padding: 12px 16px;
-            position: absolute;
-            z-index: 1000;
-            top: 125%;
-            left: 50%;
-            margin-left: -200px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 14px;
-            line-height: 1.5;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .tooltip-text::after {
-            content: "";
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: transparent transparent #262730 transparent;
-        }
-        .info-button-wrapper:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-        </style>
         <div class="info-container">
             <h1 style="margin: 0;">🇮🇩 IndoGuide</h1>
             <div class="info-button-wrapper">
@@ -123,18 +64,8 @@ with col1:
     st.caption(f"**Session ID:** `{st.session_state.session_id}`")
 with col2:
     # Add custom CSS to vertically align to bottom and right-align the button
-    st.markdown(
-        """
-        <style>
-        div[data-testid="column"]:nth-of-type(2) {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    # Custom CSS loaded globally handles alignment
+
     if st.button("Restart", use_container_width=True):
         restart_conversation()
         st.rerun()
