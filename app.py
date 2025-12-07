@@ -21,6 +21,12 @@ st.set_page_config(
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+# Inject Google Material Symbols Font
+st.markdown(
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat_add_on" />',
+    unsafe_allow_html=True
+)
+
 # Initialize session state
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
@@ -47,30 +53,19 @@ def restart_conversation():
 
 
 # Title and session info
-
-# Session info and restart button in columns
-col1, col2 = st.columns([3, 1])
-with col1:
-    st.markdown(
-        """
-        <div class="info-container">
-            <h1 style="margin: 0;">🇮🇩 IndoGuide</h1>
-            <div class="info-button-wrapper">
-                <span class="info-button">i</span>
-                <span class="tooltip-text">IndoGuide is your smart travel companion designed to make exploring Indonesia effortless. Ask away information on must-see destinations, visas, transportation, safety, and local etiquettes, so you can travel with confidence. Whether you're planning your itinerary or navigating on the go, IndoGuide helps you experience Indonesia like a pro!</span>
-            </div>
+st.markdown(
+    """
+    <div class="info-container">
+        <h1 style="margin: 0;">🇮🇩 IndoGuide</h1>
+        <div class="info-button-wrapper">
+            <span class="info-button">i</span>
+            <span class="tooltip-text">IndoGuide is your smart travel companion designed to make exploring Indonesia effortless. Ask away information on must-see destinations, visas, transportation, safety, and local etiquettes, so you can travel with confidence. Whether you're planning your itinerary or navigating on the go, IndoGuide helps you experience Indonesia like a pro!</span>
         </div>
-        """,
-        unsafe_allow_html=True
-    )
-    st.caption(f"**Session ID:** `{st.session_state.session_id}`")
-with col2:
-    # Add custom CSS to vertically align to bottom and right-align the button
-    # Custom CSS loaded globally handles alignment
-
-    if st.button("Restart", use_container_width=True):
-        restart_conversation()
-        st.rerun()
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.caption(f"**Session ID:** `{st.session_state.session_id}`")
 
 st.divider()
 
@@ -103,6 +98,11 @@ with st.sidebar:
             st.session_state.rag_config = new_config
             with st.spinner(f"Initializing RAG system..."):
                 st.session_state.rag_system = RAGSystem(config=new_config)
+    
+    st.divider()
+    if st.button("New Chat", icon=":material/chat_add_on:", use_container_width=True):
+        restart_conversation()
+        st.rerun()
 
 # Display chat messages from LLM client
 for message in st.session_state.llm_client.get_messages():

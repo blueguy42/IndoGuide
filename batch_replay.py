@@ -14,11 +14,13 @@ from config import (
     MODEL_NAME, 
     RAG_CLI_KEY_TO_ID, 
     RAG_ID_TO_NAME, 
+    TEST_DIALOGUES_FILE,
+    BATCH_RESULTS_DIR,
 )
 
 
 class BatchReplay:
-    def __init__(self, rag_config_key: str = "baseline", input_file: str = "dialogues/test_dialogues.json"):
+    def __init__(self, rag_config_key: str = "baseline", input_file: str = TEST_DIALOGUES_FILE):
         """
         Initialize the batch replay system
         
@@ -46,7 +48,7 @@ class BatchReplay:
         with open(self.input_file, 'r', encoding='utf-8') as f:
             return json.load(f)
             
-    def run(self, output_dir: str = "results/batch"):
+    def run(self, output_dir: str = BATCH_RESULTS_DIR):
         """
         Run the batch replay on all loaded dialogues
         
@@ -173,7 +175,7 @@ def main():
     parser.add_argument(
         "--input", 
         type=str, 
-        default="dialogues/test_dialogues.json", 
+        default=TEST_DIALOGUES_FILE, 
         help="Path to input JSON file with dialogues"
     )
     parser.add_argument(
@@ -186,7 +188,7 @@ def main():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="results/batch",
+        default=BATCH_RESULTS_DIR,
         help="Directory to save output results"
     )
     

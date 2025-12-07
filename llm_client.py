@@ -165,6 +165,10 @@ class LLMClient:
         for output_item in response.output:
             if output_item.type == "text":
                 full_text += output_item.text
+            elif output_item.type == "message":
+                for content_part in output_item.content:
+                    if content_part.type == "output_text":
+                        full_text += content_part.text
         
         # Add assistant message to history if auto_add_messages is enabled
         if auto_add_messages:

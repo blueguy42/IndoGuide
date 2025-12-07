@@ -6,12 +6,21 @@ API_KEY_FILE = "openai.key"
 MODEL_NAME = "gpt-5-nano-2025-08-07"
 
 # Logging Configuration
-LOG_DIRECTORY = "logs"
+LOG_DIR = "logs"
 
 # Prompt Configuration
 PROMPTS_FILE = "prompts.json"
 PROMPT_NAME = "indoguide"
 STARTER_MESSAGE = "Halo! I'm IndoGuide. I'd love to help plan your Indonesian adventure, from dream itineraries and visas to local culture. What's on your mind today?"
+
+# Batch Replay Configuration
+TEST_DIALOGUES_FILE = "dialogues/test_dialogues.json"
+BATCH_RESULTS_DIR = "results/batch"
+LAAJ_RESULTS_DIR = "results/laaj"
+EVAL_RESULTS_DIR = "results/eval"
+
+# Evaluation Configuration
+LLM_JUDGE_MODEL = "gpt-5-mini-2025-08-07"
 
 # RAG Configuration
 KNOWLEDGE_BASE_FILE = "indonesia_knowledge_base.json"

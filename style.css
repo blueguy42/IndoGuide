@@ -67,9 +67,11 @@
     opacity: 1;
 }
 
-/* Vertical Alignment for Restart Button Column */
-div[data-testid="column"]:nth-of-type(2) {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+/* Material Symbols Font Settings */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
 }

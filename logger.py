@@ -3,11 +3,11 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any
 import re
-from config import LOG_DIRECTORY, RAG_CONFIGS
+from config import LOG_DIR, RAG_CONFIGS
 
 
 class DialogueLogger:
-    def __init__(self, log_dir: str = LOG_DIRECTORY):
+    def __init__(self, log_dir: str = LOG_DIR):
         """
         Initialize the dialogue logger
         
