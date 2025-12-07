@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 import uuid
 from datetime import datetime
 from llm_client import LLMClient
@@ -122,6 +123,24 @@ with st.sidebar:
         restart_conversation()
         st.rerun()
 
+    save_chat_placeholder = st.empty()
+    
+    # Render initial state immediately to ensure visibility
+    with save_chat_placeholder:
+        if st.session_state.session_log:
+            st.download_button(
+                label="Save Chat History",
+                data=json.dumps(st.session_state.session_log, indent=2),
+                file_name=f"chat_history_{st.session_state.session_id}.json",
+                mime="application/json",
+                icon=":material/download:", 
+                use_container_width=True,
+                key="save_chat_init"
+            )
+        else:
+            if st.button("Save Chat History", icon=":material/download:", use_container_width=True, key="save_chat_init_warn"):
+                st.warning("No chat history to save yet. Start a conversation first!")
+
 # Display chat messages from LLM client
 for message in st.session_state.llm_client.get_messages():
     avatar = "icon_assistant.png" if message["role"] == "assistant" else "icon_user.png"
@@ -202,3 +221,18 @@ if prompt := st.chat_input("Type your message here..."):
     
     # Auto-save session after each turn
     logger.save_session(st.session_state.session_log)
+
+
+
+# Update Save Chat button with latest session log if available
+if st.session_state.session_log:
+    with save_chat_placeholder:
+        st.download_button(
+            label="Save Chat History",
+            data=json.dumps(st.session_state.session_log, indent=2),
+            file_name=f"chat_history_{st.session_state.session_id}.json",
+            mime="application/json",
+            icon=":material/download:", 
+            use_container_width=True,
+            key="save_chat_final"
+        )

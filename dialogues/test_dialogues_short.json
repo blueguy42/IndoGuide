@@ -1,0 +1,161 @@
+[
+  {
+    "dialog_id": 1,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Do I need to complete any digital forms before entering Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, all travelers must complete the All Indonesia Arrival Card online within 72 hours before arrival.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "How early should I submit that arrival card?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "You should submit the arrival card within 72 hours of your scheduled arrival in Indonesia.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 13, "topic": "Visa & Entry Rules", "title": "Visa Application Timeframes"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Is the arrival card the same as the e-VOA?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, the arrival card is a mandatory digital declaration, while the e-VOA is an optional advance visa application.",
+        "grounding_snippets": [
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 9, "topic": "Visa & Entry Rules", "title": "Using the Correct Visa for your Purpose"},
+          {"id": 10, "topic": "Visa & Entry Rules", "title": "Beware of Visa Scams"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do I need an onward ticket as well?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, immigration usually requires proof of an onward or return flight.",
+        "grounding_snippets": [
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 3, "topic": "Visa & Entry Rules", "title": "Mandatory Arrival Card Submission"},
+          {"id": 6, "topic": "Visa & Entry Rules", "title": "Consequences of Visa Overstay"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "What happens if I overstay my visa accidentally?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Overstaying results in a daily fine and may lead to detention or deportation.",
+        "grounding_snippets": [
+          {"id": 6, "topic": "Visa & Entry Rules", "title": "Consequences of Visa Overstay"},
+          {"id": 2, "topic": "Visa & Entry Rules", "title": "Visa on Arrival (VOA) and e-VOA"},
+          {"id": 8, "topic": "Visa & Entry Rules", "title": "Applying for Long-Term Visas"},
+          {"id": 9, "topic": "Visa & Entry Rules", "title": "Using the Correct Visa for your Purpose"}
+        ]
+      }
+    ]
+  },
+
+  {
+    "dialog_id": 2,
+    "turns": [
+      {
+        "speaker": "user",
+        "utterance": "Is my passport okay if it expires in four months when traveling to Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "No, Indonesia requires at least six months of passport validity beyond arrival.",
+        "grounding_snippets": [
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 4, "topic": "Visa & Entry Rules", "title": "Proof of Onward Travel Requirement"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Do they check for damage on the passport?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, Indonesia can deny entry if the passport has tears, water damage, or other defects.",
+        "grounding_snippets": [
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Can I enter with a temporary passport?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Temporary or emergency passports may complicate entry; check with immigration in advance.",
+        "grounding_snippets": [
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"},
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 10, "topic": "Visa & Entry Rules", "title": "Beware of Visa Scams"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "Should I carry a photocopy of my passport when exploring cities?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, carrying a copy is recommended for ID checks, especially in tourist areas.",
+        "grounding_snippets": [
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 108, "topic": "Safety Tips", "title": "Street Crime and Pickpocketing"},
+          {"id": 112, "topic": "Safety Tips", "title": "Health Insurance and Medical Services"},
+          {"id": 110, "topic": "Safety Tips", "title": "Choosing Reputable Taxis and Ride-Share"}
+        ]
+      },
+
+      {
+        "speaker": "user",
+        "utterance": "If my passport gets replaced during my trip, can I still leave Indonesia?"
+      },
+      {
+        "speaker": "assistant",
+        "utterance_ref": "Yes, but you must obtain an exit permit or special pass from immigration for the new passport.",
+        "grounding_snippets": [
+          {"id": 12, "topic": "Visa & Entry Rules", "title": "Exiting Indonesia Requirements"},
+          {"id": 11, "topic": "Visa & Entry Rules", "title": "ID and Passport Copy Requirement"},
+          {"id": 1, "topic": "Visa & Entry Rules", "title": "Passport Validity and Condition"},
+          {"id": 7, "topic": "Visa & Entry Rules", "title": "Damaged Passport Warning"}
+        ]
+      }
+    ]
+  }
+]
