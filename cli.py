@@ -5,28 +5,39 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT, MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS, STARTER_MESSAGE
+from config import MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
 
 
 class ChatCLI:
-    def __init__(self, rag_config: str = "baseline"):
+    def __init__(self, rag_config: str = "baseline", persona: str = DEFAULT_PERSONA):
         """Initialize the CLI chat interface
         
         Args:
             rag_config: RAG configuration ('baseline', 'crossencoder', or 'llm')
+            persona: Persona key ('neutral', 'friendly', 'professional')
         """
         self.llm_client = LLMClient(model=MODEL_NAME)
         self.llm_client.add_assistant_message(STARTER_MESSAGE)
-        self.system_prompt = SYSTEM_PROMPT
-        self.running = True
-        self.rag_config_name = rag_config
         
+        self.persona_key = persona
+        self.persona_name = PERSONAS[self.persona_key]["name"]
+        
+        self.rag_config_name = rag_config
         self.rag_config = RAG_CLI_KEY_TO_ID[rag_config]
+        
+        self.system_prompt = get_prompt(PERSONAS[self.persona_key]["prompt_key"])
+
+        self.running = True
         
         # Initialize logger
         self.session_id = str(uuid.uuid4())
         self.logger = DialogueLogger()
-        self.session_log = self.logger.create_session(self.session_id, self.rag_config)
+        self.session_log = self.logger.create_session(
+            self.session_id, 
+            self.rag_config,
+            persona=self.persona_key,
+            model_name=MODEL_NAME
+        )
         
         # Initialize RAG system
         print(f"\nInitializing RAG system ({RAG_ID_TO_NAME[self.rag_config]})...")
@@ -39,6 +50,7 @@ class ChatCLI:
         print("IndoGuide - CLI Interface")
         print("="*60)
         print(f"\nSession ID: {self.session_id}")
+        print(f"Persona: {self.persona_name}")
         print(f"RAG Configuration: {RAG_ID_TO_NAME[self.rag_config]}")
         print("\nIndoGuide is your smart travel companion designed to make")
         print("exploring Indonesia effortless. Ask away information on must-see")
@@ -96,7 +108,12 @@ class ChatCLI:
         
         # Create new session
         self.session_id = str(uuid.uuid4())
-        self.session_log = self.logger.create_session(self.session_id, self.rag_config)
+        self.session_log = self.logger.create_session(
+            self.session_id, 
+            self.rag_config,
+            persona=self.persona_key,
+            model_name=MODEL_NAME
+        )
         self.llm_client.reset_conversation()
         self.llm_client.add_assistant_message(STARTER_MESSAGE)
         print(f"\nConversation reset. New session ID: {self.session_id}\n")
@@ -247,10 +264,17 @@ def main():
         default=list(RAG_CLI_KEY_TO_ID.keys())[0],
         help=help_text
     )
+    parser.add_argument(
+        "--persona",
+        type=str,
+        choices=list(PERSONAS.keys()),
+        default=DEFAULT_PERSONA,
+        help="Persona to use"
+    )
     
     args = parser.parse_args()
     
-    cli = ChatCLI(rag_config=args.rag_config)
+    cli = ChatCLI(rag_config=args.rag_config, persona=args.persona)
     cli.chat()
 
 

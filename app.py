@@ -4,7 +4,7 @@ from datetime import datetime
 from llm_client import LLMClient
 from logger import DialogueLogger
 from rag_system import RAGSystem
-from config import SYSTEM_PROMPT, MODEL_NAME, RAG_NAME_TO_ID, STARTER_MESSAGE
+from config import MODEL_NAME, RAG_NAME_TO_ID, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
 
 
 # Initialize logger
@@ -31,11 +31,12 @@ st.markdown(
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
     st.session_state.rag_config = 1  # Default to baseline
+    st.session_state.rag_system = None  # Will be initialized based on config
+    st.session_state.persona = DEFAULT_PERSONA
     st.session_state.session_log = None  # Will be created on first user input
     st.session_state.session_started = False  # Track if user has sent first message
     st.session_state.llm_client = LLMClient(model=MODEL_NAME)
     st.session_state.llm_client.add_assistant_message(STARTER_MESSAGE)
-    st.session_state.rag_system = None  # Will be initialized based on config
 
 
 def restart_conversation():
@@ -69,35 +70,52 @@ st.caption(f"**Session ID:** `{st.session_state.session_id}`")
 
 st.divider()
 
-# Sidebar for RAG configuration
+# Sidebar for Configuration
 with st.sidebar:
+    st.header("🎭 Persona")
+    
+    # helper to format display name
+    persona_options = list(PERSONAS.keys())
+    
+    selected_persona = st.radio(
+        "Select Persona:",
+        options=persona_options,
+        format_func=lambda x: PERSONAS[x]["name"],
+        index=persona_options.index(st.session_state.persona),
+        help="Choose the personality of the assistant."
+    )
+    
+    # Update persona in session state
+    if selected_persona != st.session_state.persona:
+        st.session_state.persona = selected_persona
+        # Restart session when persona changes
+        restart_conversation()
+        st.rerun()
+
+    st.divider()
     st.header("⚙️ RAG Configuration")
     
-    selected_config = st.radio(
+    selected_config_name = st.radio(
         "Select RAG Configuration:",
         options=list(RAG_NAME_TO_ID.keys()),
         index=st.session_state.rag_config - 1,
         help="Choose how retrieved context is ranked before being used."
     )
     
-    new_config = RAG_NAME_TO_ID[selected_config]
+    new_config = RAG_NAME_TO_ID[selected_config_name]
     
-    # Reinitialize RAG system if configuration changed
-    if new_config != st.session_state.rag_config or st.session_state.rag_system is None:
-        # If config changed (not initial load), restart the session
-        if st.session_state.rag_system is not None:
-            st.warning("RAG configuration changed. Restarting session...")
-            # Update config BEFORE restarting to prevent radio button from reverting
-            st.session_state.rag_config = new_config
-            restart_conversation()
-            with st.spinner(f"Initializing RAG system..."):
-                st.session_state.rag_system = RAGSystem(config=new_config)
-            st.rerun()  # Refresh to clear messages and show clean interface
-        else:
-            # Initial load - just set the config
-            st.session_state.rag_config = new_config
-            with st.spinner(f"Initializing RAG system..."):
-                st.session_state.rag_system = RAGSystem(config=new_config)
+    # Initialize RAG system if not set (first run)
+    if st.session_state.rag_system is None:
+        with st.spinner(f"Initializing RAG system..."):
+            st.session_state.rag_system = RAGSystem(config=st.session_state.rag_config)
+
+    # Update RAG config if changed
+    if new_config != st.session_state.rag_config:
+        st.session_state.rag_config = new_config
+        with st.spinner(f"Initializing RAG system..."):
+            st.session_state.rag_system = RAGSystem(config=new_config)
+        restart_conversation()
+        st.rerun()
     
     st.divider()
     if st.button("New Chat", icon=":material/chat_add_on:", use_container_width=True):
@@ -114,7 +132,12 @@ for message in st.session_state.llm_client.get_messages():
 if prompt := st.chat_input("Type your message here..."):
     # Create session log on first user input
     if not st.session_state.session_started:
-        st.session_state.session_log = logger.create_session(st.session_state.session_id, st.session_state.rag_config)
+        st.session_state.session_log = logger.create_session(
+            st.session_state.session_id, 
+            st.session_state.rag_config,
+            persona=st.session_state.persona,
+            model_name=MODEL_NAME
+        )
         st.session_state.session_started = True
     
     # Get user timestamp
@@ -130,7 +153,10 @@ if prompt := st.chat_input("Type your message here..."):
         context = st.session_state.rag_system.format_context(retrieved_snippets)
     
     # Inject context into system prompt
-    augmented_prompt = context + "\n" + SYSTEM_PROMPT
+    current_prompt_key = PERSONAS[st.session_state.persona]["prompt_key"]
+    system_prompt_text = get_prompt(current_prompt_key)
+    
+    augmented_prompt = context + "\n" + system_prompt_text
     
     # If this is the first real turn (only starter message in history), inform the model
     if len(st.session_state.llm_client.messages) == 1:

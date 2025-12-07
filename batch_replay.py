@@ -10,30 +10,36 @@ from llm_client import LLMClient
 from rag_system import RAGSystem
 from logger import DialogueLogger
 from config import (
-    SYSTEM_PROMPT, 
     MODEL_NAME, 
     RAG_CLI_KEY_TO_ID, 
     RAG_ID_TO_NAME, 
     TEST_DIALOGUES_FILE,
     BATCH_RESULTS_DIR,
+    PERSONAS,
+    DEFAULT_PERSONA,
+    get_prompt
 )
 
 
 class BatchReplay:
-    def __init__(self, rag_config_key: str = "baseline", input_file: str = TEST_DIALOGUES_FILE):
+    def __init__(self, rag_config_key: str = "baseline", persona_key: str = DEFAULT_PERSONA, input_file: str = TEST_DIALOGUES_FILE):
         """
         Initialize the batch replay system
         
         Args:
             rag_config_key: CLI key for RAG configuration (e.g., 'baseline', 'llm')
+            persona_key: Key for the persona to use (e.g., 'neutral', 'friendly')
             input_file: Path to the input JSON file containing test dialogues
         """
         self.input_file = input_file
         self.rag_config_key = rag_config_key
-        self.rag_config_id = RAG_CLI_KEY_TO_ID.get(rag_config_key, 1)
+            
+        self.rag_config_id = RAG_CLI_KEY_TO_ID.get(self.rag_config_key, 1)
         self.config_name = RAG_ID_TO_NAME[self.rag_config_id]
+        self.persona_key = persona_key
+        self.persona_name = PERSONAS[self.persona_key]["name"]
         
-        print(f"Initializing Batch Replay with RAG Configuration: {self.config_name}")
+        print(f"Initializing Batch Replay with RAG Configuration: {self.config_name}, Persona: {self.persona_name}")
         
         # Initialize components
         self.llm_client = LLMClient(model=MODEL_NAME)
@@ -62,6 +68,7 @@ class BatchReplay:
             "metadata": {
                 "timestamp": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
                 "rag_config": self.rag_config_key,
+                "persona": self.persona_key,
                 "model": MODEL_NAME,
                 "input_file": self.input_file
             },
@@ -107,7 +114,9 @@ class BatchReplay:
                     context = self.rag_system.format_context(retrieved_snippets)
                     
                     # 2. Augment Prompt
-                    augmented_prompt = context + "\n" + SYSTEM_PROMPT
+                    current_prompt_key = PERSONAS[self.persona_key]["prompt_key"]
+                    system_prompt = get_prompt(current_prompt_key)
+                    augmented_prompt = context + "\n" + system_prompt
                     
                     # 3. Generate Response
                     start_gen = time.time()
@@ -160,7 +169,7 @@ class BatchReplay:
         import re
         sanitized_model = re.sub(r'[^a-zA-Z0-9-]', '_', MODEL_NAME)
         
-        output_filename = f"batchreplay_{self.rag_config_key}_{sanitized_model}_{timestamp_str}.json"
+        output_filename = f"batchreplay_{self.rag_config_key}_{self.persona_key}_{sanitized_model}_{timestamp_str}.json"
         output_path = os.path.join(output_dir, output_filename)
         
         with open(output_path, 'w', encoding='utf-8') as f:
@@ -185,6 +194,13 @@ def main():
         help="RAG configuration to use"
     )
     parser.add_argument(
+        "--persona", 
+        type=str, 
+        choices=list(PERSONAS.keys()),
+        default=DEFAULT_PERSONA,
+        help="Persona to use"
+    )
+    parser.add_argument(
         "--output-dir",
         type=str,
         default=BATCH_RESULTS_DIR,
@@ -194,7 +210,7 @@ def main():
     args = parser.parse_args()
     
     try:
-        replay = BatchReplay(rag_config_key=args.config, input_file=args.input)
+        replay = BatchReplay(rag_config_key=args.config, persona_key=args.persona, input_file=args.input)
         replay.run(output_dir=args.output_dir)
     except Exception as e:
         print(f"Error running batch replay: {e}")

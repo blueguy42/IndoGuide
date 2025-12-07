@@ -17,13 +17,15 @@ class DialogueLogger:
         self.log_dir = log_dir
         os.makedirs(log_dir, exist_ok=True)
     
-    def create_session(self, session_id: str, rag_config: int = 1) -> Dict[str, Any]:
+    def create_session(self, session_id: str, rag_config: int = 1, persona: str = "neutral", model_name: str = "unknown") -> Dict[str, Any]:
         """
         Create a new session log structure
         
         Args:
             session_id: Unique session identifier
             rag_config: RAG configuration number (1=Baseline, 2=Cross-Encoder, 3=LLM)
+            persona: Unique key for the persona (e.g. 'neutral', 'friendly')
+            model_name: Name of the model being used
             
         Returns:
             Session log dictionary
@@ -34,6 +36,8 @@ class DialogueLogger:
             "session_id": session_id,
             "session_start_time": session_start_time,
             "rag_config": RAG_CONFIGS.get(rag_config, {}).get("cli_key", f"unknown_{rag_config}"),
+            "persona": persona,
+            "model": model_name,
             "turns": []
         }
     
@@ -79,7 +83,14 @@ class DialogueLogger:
         """
         session_start_time = re.sub("[^0-9]", "", session_log.get("session_start_time", "unknown"))
         session_id = session_log["session_id"]
-        filename = f"conversation_{session_start_time}_{session_id}.json"
+        persona = session_log.get("persona", "unknown")
+        rag_config = session_log.get("rag_config", "unknown")
+        model = session_log.get("model", "unknown")
+        
+        # Sanitize model name similarly to batch_replay (replace non-alphanumeric with _)
+        sanitized_model = re.sub(r'[^a-zA-Z0-9-]', '_', model)
+        
+        filename = f"conversation_{session_start_time}_{rag_config}_{persona}_{sanitized_model}_{session_id}.json"
         filepath = os.path.join(self.log_dir, filename)
         
         with open(filepath, 'w', encoding='utf-8') as f:
