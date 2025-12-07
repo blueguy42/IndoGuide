@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 from typing import Generator, Optional, List, Dict
-from config import API_KEY_FILE, MODEL_NAME
+from config.config import API_KEY_FILE, MODEL_NAME
 
 
 class LLMClient:

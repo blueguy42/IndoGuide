@@ -2,10 +2,10 @@ import sys
 import argparse
 import uuid
 from datetime import datetime
-from llm_client import LLMClient
-from logger import DialogueLogger
-from rag_system import RAGSystem
-from config import MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
+from core.llm_client import LLMClient
+from core.logger import DialogueLogger
+from core.rag_system import RAGSystem
+from config.config import MODEL_NAME, RAG_CLI_KEY_TO_ID, RAG_ID_TO_NAME, RAG_ID_TO_DETAILS, RAG_CONFIGS, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
 
 
 class ChatCLI:

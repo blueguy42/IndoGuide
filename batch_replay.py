@@ -6,10 +6,10 @@ import time
 from datetime import datetime
 from typing import List, Dict, Any
 
-from llm_client import LLMClient
-from rag_system import RAGSystem
-from logger import DialogueLogger
-from config import (
+from core.llm_client import LLMClient
+from core.rag_system import RAGSystem
+from core.logger import DialogueLogger
+from config.config import (
     MODEL_NAME, 
     RAG_CLI_KEY_TO_ID, 
     RAG_ID_TO_NAME, 

@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any
 import re
-from config import LOG_DIR, RAG_CONFIGS
+from config.config import LOG_DIR, RAG_CONFIGS
 
 
 class DialogueLogger:

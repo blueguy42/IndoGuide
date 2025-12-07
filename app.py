@@ -2,10 +2,10 @@ import streamlit as st
 import json
 import uuid
 from datetime import datetime
-from llm_client import LLMClient
-from logger import DialogueLogger
-from rag_system import RAGSystem
-from config import MODEL_NAME, RAG_NAME_TO_ID, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
+from core.llm_client import LLMClient
+from core.logger import DialogueLogger
+from core.rag_system import RAGSystem
+from config.config import MODEL_NAME, RAG_NAME_TO_ID, STARTER_MESSAGE, PERSONAS, DEFAULT_PERSONA, get_prompt
 
 
 # Initialize logger
@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 # Load custom CSS
-with open("style.css") as f:
+with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Inject Google Material Symbols Font
@@ -143,7 +143,7 @@ with st.sidebar:
 
 # Display chat messages from LLM client
 for message in st.session_state.llm_client.get_messages():
-    avatar = "icon_assistant.png" if message["role"] == "assistant" else "icon_user.png"
+    avatar = "assets/icon_assistant.png" if message["role"] == "assistant" else "assets/icon_user.png"
     with st.chat_message(message["role"], avatar=avatar):
         st.markdown(message["content"])
 
@@ -163,7 +163,7 @@ if prompt := st.chat_input("Type your message here..."):
     user_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
     
     # Display user message
-    with st.chat_message("user", avatar="icon_user.png"):
+    with st.chat_message("user", avatar="assets/icon_user.png"):
         st.markdown(prompt)
     
     # Retrieve relevant context using RAG
@@ -192,7 +192,7 @@ if prompt := st.chat_input("Type your message here..."):
     )
     
     # Get bot response
-    with st.chat_message("assistant", avatar="icon_assistant.png"):
+    with st.chat_message("assistant", avatar="assets/icon_assistant.png"):
         message_placeholder = st.empty()
         full_response = ""
         

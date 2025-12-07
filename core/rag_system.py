@@ -5,8 +5,8 @@ from openai import OpenAI
 import chromadb
 from chromadb.config import Settings
 from sentence_transformers import CrossEncoder
-from llm_client import LLMClient
-from config import (
+from core.llm_client import LLMClient
+from config.config import (
     API_KEY_FILE,
     KNOWLEDGE_BASE_FILE,
     CHROMA_DB_PATH,
@@ -52,7 +52,7 @@ class RAGSystem:
     
     def _load_knowledge_base(self) -> List[Dict[str, Any]]:
         """Load knowledge base from JSON file"""
-        kb_path = os.path.join(os.path.dirname(__file__), KNOWLEDGE_BASE_FILE)
+        kb_path = os.path.join(os.path.dirname(__file__), "..", KNOWLEDGE_BASE_FILE)
         with open(kb_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     

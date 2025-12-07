@@ -6,8 +6,8 @@ import glob
 from statistics import mean
 from typing import List, Dict, Any, Optional
 
-import config
-from llm_client import LLMClient
+from config import config
+from core.llm_client import LLMClient
 
 # Initialize LLM Client
 llm_client = LLMClient(model=config.LLM_JUDGE_MODEL)

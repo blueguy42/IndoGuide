@@ -2,8 +2,8 @@ import json
 import os
 
 API_KEY_FILE = "openai.key"
-PROMPTS_FILE = "prompts.json"
-KNOWLEDGE_BASE_FILE = "indonesia_knowledge_base.json"
+PROMPTS_FILE = "data/prompts.json"
+KNOWLEDGE_BASE_FILE = "data/indonesia_knowledge_base.json"
 CHROMA_DB_PATH = "./chroma_db"
 
 # Model Configuration
@@ -30,7 +30,7 @@ STARTER_MESSAGE = "Hello! I'm IndoGuide. I'd love to help plan your Indonesian a
 LOG_DIR = "logs"
 
 # Batch Replay Configuration
-TEST_DIALOGUES_FILE = "dialogues/test_dialogues.json"
+TEST_DIALOGUES_FILE = "data/dialogues/test_dialogues.json"
 BATCH_RESULTS_DIR = "results/batch"
 LAAJ_RESULTS_DIR = "results/laaj"
 EVAL_RESULTS_DIR = "results/eval"
@@ -74,7 +74,7 @@ RAG_ID_TO_DETAILS = {k: (v["name"], v["details"]) for k, v in RAG_CONFIGS.items(
 # Prompt Loader
 def load_prompts():
     """Load prompts from the prompts repository"""
-    prompts_path = os.path.join(os.path.dirname(__file__), PROMPTS_FILE)
+    prompts_path = os.path.join(os.path.dirname(__file__), "..", PROMPTS_FILE)
     with open(prompts_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
