@@ -30,7 +30,7 @@ STARTER_MESSAGE = "Hello! I'm IndoGuide. I'd love to help plan your Indonesian a
 LOG_DIR = "logs"
 
 # Batch Replay Configuration
-TEST_DIALOGUES_FILE = "data/dialogues/test_dialogues.json"
+TEST_DIALOGUES_FILE = "data/test_dialogues.json"
 BATCH_RESULTS_DIR = "results/batch"
 LAAJ_RESULTS_DIR = "results/laaj"
 EVAL_RESULTS_DIR = "results/eval"
