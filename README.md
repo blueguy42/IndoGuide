@@ -1,4 +1,4 @@
-# ConvoAI-Cambridge: IndoGuide
+# IndoGuide
 
 ## Table of Contents
 
