@@ -1,5 +1,19 @@
 # ConvoAI-Cambridge: IndoGuide
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Interface Options](#interface-options)
+- [System Configurations](#system-configurations)
+  - [Persona Configurations](#persona-configurations-3-options)
+  - [RAG Configurations](#rag-configurations-3-options)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Models Used](#models-used)
+- [Setup Instructions](#setup-instructions)
+- [Running the Application](#running-the-application)
+- [Batch Evaluation](#batch-evaluation)
+
 ## Overview
 
 This repository is the technical code of an assignment for the Conversational AI module of the **MPhil in Human-Inspired Artificial Intelligence** programme at the **University of Cambridge**. This project implements **IndoGuide**, an intelligent travel companion chatbot designed to help users explore Indonesia by providing information on must-see destinations, visas, transportation, safety, and local etiquettes.
@@ -55,7 +69,7 @@ The Retrieval-Augmented Generation system offers three reranking strategies:
 ## Project Structure
 
 ```
-ConvoAI-Cambridge/
+IndoGuide/
 ├── app.py                           # Streamlit web application
 ├── cli.py                           # CLI chat interface
 ├── batch_replay.py                  # Batch dialogue replay for evaluation
