@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-07 18:39:33",
+    "rag_config": "llm",
+    "persona": "neutral",
+    "model": "gpt-5-nano-2025-08-07",
+    "input_file": "data/test_dialogues.json",
+    "eval_model": "gpt-4o-mini-2024-07-18"
+  },
+  "retrieval": {
+    "mean_recall_at_4": 0.555,
+    "mean_mrr": 0.9116666666666666,
+    "mean_ndcg_at_4": 0.630105715128052
+  },
+  "generation_quality": {
+    "factuality": 4.71,
+    "faithfulness": 4.83,
+    "helpfulness": 4.78,
+    "overall": 4.18
+  }
+}
