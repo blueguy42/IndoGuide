@@ -134,7 +134,7 @@ The system utilizes several specialized models for different components:
 | --------------------------- | -------------------------------------- | ------------ | ------------------------------------------------------------------ |
 | **Chatbot**                 | `gpt-5-nano-2025-08-07`                | OpenAI       | Main conversational AI for generating responses                    |
 | **Embedding**               | `text-embedding-3-small`               | OpenAI       | Text vectorization for semantic retrieval                          |
-| **Cross-Encoder Reranking** | `cross-encoder/ms-marco-MiniLM-L-6-v2` | Hugging Face | Re-ranks retrieved documents for relevance                         |
+| **Cross-Encoder Reranking** | `cross-encoder/ms-marco-MiniLM-L6-v2` | Hugging Face | Re-ranks retrieved documents for relevance                         |
 | **LLM Reranker**            | `gpt-5-nano-2025-08-07`                | OpenAI       | LLM-based re-ranking of retrieved documents                        |
 | **LLM-as-a-Judge (LAAJ)**   | `gpt-4o-mini-2024-07-18`               | OpenAI       | Evaluates response quality (factuality, faithfulness, helpfulness) |
 

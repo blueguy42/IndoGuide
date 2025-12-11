@@ -9,7 +9,7 @@ CHROMA_DB_PATH = "./chroma_db"
 # Model Configuration
 MODEL_NAME = "gpt-5-nano-2025-08-07"
 EMBEDDING_MODEL = "text-embedding-3-small"
-CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+CROSS_ENCODER_MODEL = "cross-encoder/ms-marco-MiniLM-L6-v2"
 LLM_RERANKER_MODEL = "gpt-5-nano-2025-08-07"
 LLM_JUDGE_MODEL = "gpt-4o-mini-2024-07-18"
 
