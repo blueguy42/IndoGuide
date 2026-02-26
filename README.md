@@ -1,5 +1,7 @@
 # IndoGuide
 
+<img width="1448" height="784" alt="image" src="https://github.com/user-attachments/assets/2b58ad3a-ade1-4c82-85c0-bcd6ced7bacc" />
+
 ## Table of Contents
 
 - [Overview](#overview)
